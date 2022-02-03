@@ -1,0 +1,2470 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+        name="viewport">
+  <title>Premium nbn™ Internet Plans by 10MATES</title>
+  <meta content="Premium nbn Internet plans with no compromise on quality. We have national coverage and provide connections via FTTP, FTTN, FTTB, HFC, FTTC & Fixed Wireless"
+        name="Description">
+  <meta content="nbn, nbn plans, unlimited nbn plans, voip, low contention nbn"
+        name="keywords">
+  <meta content="#221f68" name="theme-color">
+  <meta content="Premiun nbn Internet with 10MATES!" property="og:title">
+  <meta content="A better experience with low contention premium plans" property="og:description">
+  <meta content="website" property="og:type">
+  <meta content="https://10mates.com.au/nbn/" property="og:url">
+  <meta content="https://10mates.com.au/nbn/opengraph.jpg" property="og:image">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="../css/dhtmlxcalendar.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <link href="../js/plugins/icheck/skins/all.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css"
+        rel="stylesheet">
+  <script type="text/javascript" src="../js/lottie.js"></script>
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+  <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+  <link href="/manifest.json" rel="manifest">
+  <link color="#5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon">
+  <meta content="10MATES" name="apple-mobile-web-app-title">
+  <meta content="10MATES" name="application-name">
+  <meta content="#221f68" name="theme-color">
+  <link href="../css/micromodal.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue-slider-component@latest/theme/default.css">
+  <script src="../js/micromodal.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/vue-multiselect@2.1.0"></script>
+  <link rel="stylesheet" href="https://unpkg.com/vue-multiselect@2.1.0/dist/vue-multiselect.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src='https://cdn.jsdelivr.net/lodash/4.17.2/lodash.min.js'></script>
+  <link rel="stylesheet" href="/js/plugins/@glidejs/glide/dist/css/glide.core.min.css">
+  <!-- Optional Theme Stylesheet -->
+  <link rel="stylesheet" href="/js/plugins/@glidejs/glide/dist/css/glide.theme.min.css">
+  <link rel="stylesheet" href="/css/glide.min.css">
+
+  <style type="text/css">
+    .container {
+      width: auto;
+      max-width: none;
+    }
+  .monthly-plan {
+    position: fixed !important;
+    bottom: 0; /* required */
+    z-index: 99;
+  }
+  .mobile-only {
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .mobile-only {
+      display: block;
+    }
+  }
+  .web-only {
+    display: none !important;
+  }
+
+  @media only screen and (min-width: 768.1px) {
+    .web-only {
+      display: block !important;
+    }
+  }
+    @import url(https://fonts.googleapis.com/css?family=Dosis:700);
+    datalist {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      font-size: 1.6em;
+      display: flex;
+    }
+
+    datalist option {
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+    }
+    .ph {
+      /*background: #ecf0f1;*/
+      color: #ffffff;
+    }
+    input[type="range"]::-webkit-slider-thumb:active {
+      transform: scale(1.6);
+    }
+    .covVal {
+      /*border-bottom: 4px dashed #ffffff;*/
+      text-align: center;
+      font-weight: bold;
+      font-size: 8vw;
+      width: 60%;
+      height: 100%;
+      line-height: 100%;
+      margin: 40px auto;
+      letter-spacing: -.07em;
+      text-shadow: #2497E3 2px 2px 2px;
+    }
+    .custom-step {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px #ccc;
+      background-color: #fff;
+    }
+    .custom-step.active {
+      box-shadow: 0 0 0 3px #3498db;
+      background-color: #3498db;
+    }
+  .example_c {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 20%;
+    background-color: transparent;
+    border: 2px solid white !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+  }
+    /* input[type=range] {
+      height: 2%;
+      -webkit-appearance: none;
+      margin-bottom: 10px;
+      margin-top: -20px;
+      width: 90%;
+      background-color: transparent;
+    }
+    input[type=range]:focus {
+      outline: none;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 5px;
+      cursor: pointer;
+      animate: 0.2s;
+      box-shadow: 0px 0px 0px #000000;
+      background: #2497E3;
+      border-radius: 1px;
+      border: 0px solid #000000;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      box-shadow: 0px 0px 0px #000000;
+      border: 1px solid #2497E3;
+      height: 18px;
+      width: 18px;
+      border-radius: 25px;
+      background: #ffffff;
+      cursor: pointer;
+      -webkit-appearance: none;
+      margin-top: -7px;
+      transition: .3s ease-in-out;
+    }
+    input[type=range]:focus::-webkit-slider-runnable-track {
+      background: #2497E3;
+    }
+    input[type=range]::-moz-range-track {
+      width: 100%;
+      height: 5px;
+      cursor: pointer;
+      animate: 0.2s;
+      box-shadow: 0px 0px 0px #000000;
+      background: #2497E3;
+      border-radius: 1px;
+      border: 0px solid #000000;
+    }
+    input[type=range]::-moz-range-thumb {
+      box-shadow: 0px 0px 0px #000000;
+      border: 1px solid #2497E3;
+      height: 18px;
+      width: 18px;
+      border-radius: 25px;
+      background: #A1D0FF;
+      cursor: pointer;
+    }
+    input[type=range]::-ms-track {
+      width: 100%;
+      height: 5px;
+      cursor: pointer;
+      animate: 0.2s;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+    input[type=range]::-ms-fill-lower {
+      background: #2497E3;
+      border: 0px solid #000000;
+      border-radius: 2px;
+      box-shadow: 0px 0px 0px #000000;
+    }
+    input[type=range]::-ms-fill-upper {
+      background: #2497E3;
+      border: 0px solid #000000;
+      border-radius: 2px;
+      box-shadow: 0px 0px 0px #000000;
+    }
+    input[type=range]::-ms-thumb {
+      margin-top: 1px;
+      box-shadow: 0px 0px 0px #000000;
+      border: 1px solid #2497E3;
+      height: 18px;
+      width: 18px;
+      border-radius: 25px;
+      background: #A1D0FF;
+      cursor: pointer;
+    }
+    input[type=range]:focus::-ms-fill-lower {
+      background: #2497E3;
+    }
+    input[type=range]:focus::-ms-fill-upper {
+      background: #2497E3;
+    } */
+      .faq input
+      {
+      width: 100%;
+      height: 60px;
+      font-size: 20px;
+      background-color: #fff;
+      box-shadow: 0px 2px 4px rgba( 52, 67, 75, .2 );
+      display: block;
+      padding: 0 20px;
+      margin-bottom: 40px;
+      
+      -webkit-transition: box-shadow .1s linear;
+      transition: box-shadow .1s linear;
+      }
+      .faq input::-webkit-input-placeholder     { color: #a1bdcb !important; }
+      .faq input::-moz-placeholder                      { color: #a1bdcb !important; }
+      .faq input:-ms-input-placeholder          { color: #a1bdcb !important; }
+      .faq input:focus{
+          box-shadow: 0px 4px 8px rgba( 52, 67, 75, .4 );
+      }
+      .faq .highlight{
+          background-color: #656565;
+          border: 2px dashed red
+      }
+      .faq > ul
+      {
+      }
+      .faq > ul > li
+      {
+      }
+      .faq > ul > li:not( :first-child )
+      {
+          border-top: 1px solid #dcebed;
+          margin-top: 20px;
+          padding-top: 20px;
+      }
+      .faq > ul > li.is-hidden
+      {
+          display: none;
+      }
+          .faq > ul > li h2
+          {
+              font-size: 24px;
+              font-weight: 700;
+          }
+              .faq > ul > li h2:hover,
+              .faq > ul > li h2:focus,
+              .faq > ul > li.is-active h2,
+              .faq > ul > li:target h2
+              {
+                  color: #a664b7;
+              }
+          .faq > ul > li > div
+          {
+              display: none;
+          }
+          .faq > ul > li.is-active > div,
+          .faq > ul > li:target > div
+          {
+              display: block;
+              margin-top: 10px;
+          }
+      
+      .faq__notfound
+      {
+          font-size: 20px;
+          font-style: italic;
+          display: none;
+      }
+      .faq__notfound.is-visible
+      {
+          display: block;
+      }
+
+      .faq h2 a{
+          color: #fff;
+      }
+  </style><!-- Google Tag Manager -->
+
+  <script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WQHR845');
+  </script><!-- End Google Tag Manager -->
+<script src="//code-eu1.jivosite.com/widget/04kkYYsHo2" async></script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe height="0"
+    <noscript><iframe height="0"
+          src="https://www.googletagmanager.com/ns.html?id=GTM-WQHR845"
+          style="display:none;visibility:hidden"
+          width="0"></iframe></noscript> <!-- End Google Tag Manager (noscript) -->
+  <div class="overlay"></div>
+  <section id="home">
+    <header>
+      <div class="wrapper header__content row">
+        <div class="col-md-3 col-sm-3 col-xs-6">
+          <a class="header__logo text-gradient --gradient-blue"
+               href="https://10mates.com.au/">10MATES</a>
+        </div>
+        <div class="col-sm-6 col-sm-offset-3 col-xs-6 burger-menu-wrapper">
+          <div class="burger-menu">
+            <div class="bar --top"></div>
+            <div class="bar --center"></div>
+            <div class="bar --bottom"></div>
+          </div>
+        </div>
+        <div class="col-md-9 col-sm-9 col-xs-12 --align-right">
+          <div class="header__list-wrapper">
+            <ul class="header__list --align-right">
+              <li class="close-header-list-mobile">
+                <div class="bar --top"></div>
+                <div class="bar --bottom"></div>
+              </li>
+              <li>
+                <a href="https://10mates.com.au/nbn/">Internet</a>
+              </li>
+              <li>
+                <a href="https://10mates.com.au/nbn/">Business</a>
+              </li>
+              <li>
+                <a href="https://10mates.com.au/nbn/">Phone</a>
+              </li>
+              <li>
+                <a href="https://10mates.com.au/web-dev/">Web / Dev</a>
+              </li>
+              <li>
+                <a href="https://10mates.com.au/contact/">Contact</a>
+              </li>
+              <li class="buttons-wrapper">
+                <div class="button --gradient-blue"
+                     id="button-order-menu">
+                  <div class="text">
+                    ORDER
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper content row reverse-on-mobile">
+      <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
+          <br> <br> <br><br> <br> <br><br> <br> <br><br> <br> <br>
+        <h1 class="text-gradient --gradient-blue --w-shadow">Business and Corporate </h1>
+        <p>We proactively monitor your connection 24/7 for faults and take quick action using an enhanced 12 hour SLA restoration time.</p>
+        <p>We include a redundant 5G/4G Backup connection to keep your business running during an outage.</p>
+        <div class="buttons-wrapper">
+            <div class="button --gradient-blue checkAddressBtn"
+            id="button-order">SEE THE OPTIONS</div>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-6 col-xs-12 bg-col">
+          <br> <br> <br><br> <br> <br>
+        <div id="anim-4"></div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <!-- main sections-->
+  <div class="main-sections antialiased"
+       id="app-main">
+    <div v-if="isInitiallyLoaded" style="background: linear-gradient(to left,#66e7ff,#7467fe)" class="text-white monthly-plan w-full min-w-0 p-4 rounded-lg shadow-xs dark:bg-gray-800">
+      <h4 class="text-white text-xl">
+        Monthly Cost : ${{!isNaN(totalMonthCost) ? parseFloat(totalMonthCost).toFixed(2) : ''}}
+      </h4>
+      <small
+             @click="animateToSection('#order-summary')"
+             class="text-white cursor-pointer hover:underline">
+        Show Order Summary
+      </small>
+    </div>
+    <div class="wrapper">
+      <!-- address checker-->
+      <section class="sub-section address-checker"
+               id="nbm">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+            <h2>nbn<sup>tm</sup> address checker</h2>
+            <h6>It will determine what type of nbn is available, whether nbn will charge the new development fee and for FTTN, the estimated speed nbn has reported, calculated by distance to the node.</h6>
+
+            <div v-show ="showAddress">
+            <h3>Do you have a landline number at your address?</h3><!-- choices-->
+            <div class="choices-list flex --normal-size">
+              <div class="choice__item --ghost btnaorf"
+                   data-option="phone">
+                <span>Yes</span>
+              </div>
+              <div class="choice__item --ghost --is-active btnaorf"
+                   data-option="address">
+                <span>No</span>
+              </div>
+            </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      
+      <!-- enter your address-->
+      <section class="sub-section enter-your-address"
+               id="address-section">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+            <div id="input-address-field">
+              <h2>Enter your address</h2>
+              <div class="search-input">
+                <p class="get-started"
+                   style="display:none;">To get the order started, please enter your address below.</p>
+                   <input class ="search-pixel text-black" id="address-field"
+                     placeholder="eg. 12 Lake St, Cairns..."
+                     type="search" > <!--cody-->
+              </div>
+            </div>
+            <div id="input-phone-field"
+                 style="display: none;">
+              <h2>Enter your telephone number</h2>
+              <div class="search-input">
+                <input id="phone-field"
+                     placeholder="Enter your phone number here"
+                     type="search"
+                     v-model="phone.number">
+              </div>
+            </div>
+            <div>
+              <div style="display: none">
+                <div ref="modal_contact">
+                  <form class="col-12 --input-dark"
+                        v-on:submit.prevent="doSubmitContact">
+                    <p class="desc">Unfortunately nbnTM has not completed the rollout at your address so they are not accepting orders. If you would like to be notified when the status of your address changes, please fill out your details below.</p>
+                    <div class="input-wrapper">
+                      <div class="placeholder">
+                        First Name <span class="required">*</span>
+                      </div><input class="form-control"
+                           type="text"
+                           v-bind:class="{error : errors.fields.firstName != '' }"
+                           v-model.trim="forms.contact.firstName">
+                      <p class="text-danger"
+                         v-if="errors.fields.firstName != ''">{{ errors.fields.firstName }}</p>
+                    </div>
+                    <div class="input-wrapper">
+                      <div class="placeholder">
+                        Last Name <span class="required">*</span>
+                      </div><input class="form-control"
+                           type="text"
+                           v-bind:class="{error : errors.fields.lastName != '' }"
+                           v-model.trim="forms.contact.lastName">
+                      <p class="text-danger"
+                         v-if="errors.fields.lastName != ''">{{ errors.fields.lastName }}</p>
+                    </div>
+                    <div class="input-wrapper">
+                      <div class="placeholder">
+                        Email <span class="required">*</span>
+                      </div><input class="form-control"
+                           type="email"
+                           v-bind:class="{error : errors.fields.email != '' }"
+                           v-model.trim="forms.contact.email">
+                      <p class="text-danger"
+                         v-if="errors.fields.email != ''">{{ errors.fields.email }}</p>
+                    </div>
+                    <div class="input-wrapper">
+                      <div class="placeholder">
+                        Phone <span class="required">*</span>
+                      </div><input class="form-control"
+                           type="text"
+                           v-bind:class="{error : errors.fields.phone != '' }"
+                           v-model.trim="forms.contact.phone">
+                      <p class="text-danger"
+                         v-if="errors.fields.phone != ''">{{ errors.fields.phone }}</p>
+                    </div>
+                  </form>
+                </div>
+                <!-- <div id="tick-block" v-if="showSQMap" v-cloak>
+                  <img src="/img/icons/greentick2.gif" class="check-tick">
+                  <h4>Your address is nbn&trade; ready</h4>
+                  <div class="choices-list flex --normal-size"><div class="choice__item --ghost" v-on:click="choosePlan()"><span>Click here to choose a plan</span></div></div>
+                </div> -->
+                <div ref="modal_nolocation">
+                  <p class="desc">Looks like we couldn't match your address to anything in the nbn database. It could be a simple addressing mistmatch or we need to get your address added to their database. We would need a copy of any bills or
+                  letters showing the address so we can submit it to nbn to get it added, this will add an additional week for activation</p>
+                  <form class="col-12 --input-dark"
+                        enctype="multipart/form-data"
+                        id="form-noloc"
+                        name="form-noloc"
+                        v-on:submit.prevent="doSubmitLocationForm">
+                    <div class="input-wrapper">
+                      <div class="placeholder">
+                        First Name <span class="required">*</span>
+                      </div><input class="form-control"
+                           type="text"
+                           v-model.trim="forms.contact.firstName">
+                      <p class="text-danger"
+                         v-if="errors.fields.firstName != ''">{{ errors.fields.firstName }}</p>
+                    </div>
+                    <div class="input-wrapper">
+                      <div class="placeholder">
+                        Last Name <span class="required">*</span>
+                      </div><input class="form-control"
+                           type="text"
+                           v-model.trim="forms.contact.lastName">
+                      <p class="text-danger"
+                         v-if="errors.fields.lastName != ''">{{ errors.fields.lastName }}</p>
+                    </div>
+                    <div class="input-wrapper">
+                      <div class="placeholder">
+                        Email <span class="required">*</span>
+                      </div><input class="form-control"
+                           type="email"
+                           v-model.trim="forms.contact.email">
+                      <p class="text-danger"
+                         v-if="errors.fields.email != ''">{{ errors.fields.email }}</p>
+                    </div>
+                    <div class="input-wrapper">
+                      <div class="placeholder">
+                        Phone # <span class="required">*</span>
+                      </div><input class="form-control"
+                           type="text"
+                           v-model.trim="forms.contact.phone">
+                      <p class="text-danger"
+                         v-if="errors.fields.phone != ''">{{ errors.fields.phone }}</p>
+                    </div>
+                    <div class="input-wrapper">
+                      <div class="placeholder">
+                        Attachment <small>(optional)</small>
+                      </div><input class="form-control"
+                           id="attachment"
+                           name="attachment"
+                           type="file">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="spinner">
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
+            </div>
+            <div class="spinner-text col-md-12 col-xs-12"
+                 id="spinner-text"></div>
+            <div class="row"
+                 id="locations"
+                 v-cloak=""
+                 v-if="locations.length &gt; 0 && step == 2">
+              <div class="col-md-12 col-xs-12">
+                <br>
+                <p>&nbsp;These are the available plans in your area. Please select 1.</p>
+                <div class="table"
+                     v-cloak="">
+                  <div class="row header blue">
+                    <div class="cell">
+                      Select
+                    </div>
+                    <div class="cell">
+                      Access Method
+                    </div>
+                    <div class="cell">
+                      Maximum Bandwidth
+                    </div>
+                  </div>
+                  <div class="row row-data"
+                       v-for="loc in locations">
+                    <div class="cell"
+                         data-title="Select">
+                      <div class="iradio_square-blue">
+                        <input class="radio"
+                             name="loc"
+                             type="radio"
+                             :value="loc.accessMethod"
+                             v-model="selectedLocId">
+                      </div>
+                    </div>
+                    <div class="cell"
+                         data-title="Address">
+                      {{ loc.accessMethod }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- address form-->
+            
+<div v-show ="showAddress">
+            <form class="col-2 --input-dark"
+                  id="address-form"
+                  name="address-form">
+              <div class="input-wrapper">
+                <div class="placeholder">
+                  Address Information
+                </div><input id="address-info"
+                     placeholder="e.g. Building Name"
+                     type="text"
+                     v-model="selectedAddressFormatted">
+              </div>
+              <div class="input-wrapper">
+                <div class="placeholder">
+                  Level
+                </div><input placeholder=""
+                     type="text"
+                     v-model="locLevel">
+              </div>
+              <div class="input-wrapper">
+                <div class="placeholder">
+                  Sub Address Type
+                </div><input placeholder="e.g. Unit, State"
+                     type="text"
+                     v-model="locSubAddrType">
+              </div>
+              <div class="input-wrapper">
+                <div class="placeholder">
+                  Number
+                </div><input placeholder="e.g. 12, 12A"
+                     type="text"
+                     v-model="locNumber">
+              </div>
+              <div class="input-wrapper">
+                <div class="placeholder">
+                  Street Number
+                </div><input placeholder=""
+                     type="text"
+                     v-model="streetNo">
+              </div>
+              <div class="input-wrapper">
+                <div class="placeholder">
+                  Suffix
+                </div><input placeholder=""
+                     type="text">
+              </div>
+              <div class="input-wrapper">
+                <div class="placeholder">
+                  Street Name
+                </div><input placeholder=""
+                     type="text"
+                     v-model="streetName">
+                <p class="text-danger"
+                   v-if="showSQFormError && streetName==''">This field is required</p>
+              </div>
+              <div class="col-2">
+                <div class="input-wrapper">
+                  <div class="placeholder">
+                    Type
+                  </div><select v-model="streetType">
+                    <option value="ALLEY">
+                      ALLEY
+                    </option>
+                    <option value="AMBLE">
+                      AMBLE
+                    </option>
+                    <option value="APPROACH">
+                      APPROACH
+                    </option>
+                    <option value="ARCADE">
+                      ARCADE
+                    </option>
+                    <option value="ARTERIAL">
+                      ARTERIAL
+                    </option>
+                    <option value="AVENUE">
+                      AVENUE
+                    </option>
+                    <option value="BAY">
+                      BAY
+                    </option>
+                    <option value="BEND">
+                      BEND
+                    </option>
+                    <option value="BRAE">
+                      BRAE
+                    </option>
+                    <option value="BREAK">
+                      BREAK
+                    </option>
+                    <option value="BOULEVARD">
+                      BOULEVARD
+                    </option>
+                    <option value="BOARDWALK">
+                      BOARDWALK
+                    </option>
+                    <option value="BOWL">
+                      BOWL
+                    </option>
+                    <option value="BYPASS">
+                      BYPASS
+                    </option>
+                    <option value="CIRCLE">
+                      CIRCLE
+                    </option>
+                    <option value="CIRCUS">
+                      CIRCUS
+                    </option>
+                    <option value="CIRCUIT">
+                      CIRCUIT
+                    </option>
+                    <option value="CHASE">
+                      CHASE
+                    </option>
+                    <option value="CLOSE">
+                      CLOSE
+                    </option>
+                    <option value="CORNER">
+                      CORNER
+                    </option>
+                    <option value="COMMON">
+                      COMMON
+                    </option>
+                    <option value="CONCOURSE">
+                      CONCOURSE
+                    </option>
+                    <option value="CRESCENT">
+                      CRESCENT
+                    </option>
+                    <option value="CROSS">
+                      CROSS
+                    </option>
+                    <option value="COURSE">
+                      COURSE
+                    </option>
+                    <option value="CREST">
+                      CREST
+                    </option>
+                    <option value="CRUISEWAY">
+                      CRUISEWAY
+                    </option>
+                    <option value="COURT">
+                      COURT
+                    </option>
+                    <option value="COVE">
+                      COVE
+                    </option>
+                    <option value="DALE">
+                      DALE
+                    </option>
+                    <option value="DELL">
+                      DELL
+                    </option>
+                    <option value="DENE">
+                      DENE
+                    </option>
+                    <option value="DIVIDE">
+                      DIVIDE
+                    </option>
+                    <option value="DOMAIN">
+                      DOMAIN
+                    </option>
+                    <option value="DRIVE">
+                      DRIVE
+                    </option>
+                    <option value="EAST">
+                      EAST
+                    </option>
+                    <option value="EDGE">
+                      EDGE
+                    </option>
+                    <option value="ENTRANCE">
+                      ENTRANCE
+                    </option>
+                    <option value="ESPLANADE">
+                      ESPLANADE
+                    </option>
+                    <option value="EXTENSION">
+                      EXTENSION
+                    </option>
+                    <option value="FLATS">
+                      FLATS
+                    </option>
+                    <option value="FORD">
+                      FORD
+                    </option>
+                    <option value="FREEWAY">
+                      FREEWAY
+                    </option>
+                    <option value="GATE">
+                      GATE
+                    </option>
+                    <option value="GARDEN/S">
+                      GARDEN/S
+                    </option>
+                    <option value="GLADE/S">
+                      GLADE/S
+                    </option>
+                    <option value="GLEN">
+                      GLEN
+                    </option>
+                    <option value="GULLY">
+                      GULLY
+                    </option>
+                    <option value="GRANGE">
+                      GRANGE
+                    </option>
+                    <option value="GREEN">
+                      GREEN
+                    </option>
+                    <option value="GROVE">
+                      GROVE
+                    </option>
+                    <option value="GATEWAY">
+                      GATEWAY
+                    </option>
+                    <option value="HILL">
+                      HILL
+                    </option>
+                    <option value="HOLLOW">
+                      HOLLOW
+                    </option>
+                    <option value="HEATH">
+                      HEATH
+                    </option>
+                    <option value="HEIGHTS">
+                      HEIGHTS
+                    </option>
+                    <option value="HUB">
+                      HUB
+                    </option>
+                    <option value="HIGHWAY">
+                      HIGHWAY
+                    </option>
+                    <option value="ISLAND">
+                      ISLAND
+                    </option>
+                    <option value="JUNCTION">
+                      JUNCTION
+                    </option>
+                    <option value="LANE">
+                      LANE
+                    </option>
+                    <option value="LINK">
+                      LINK
+                    </option>
+                    <option value="LOOP">
+                      LOOP
+                    </option>
+                    <option value="LOWER">
+                      LOWER
+                    </option>
+                    <option value="LANEWAY">
+                      LANEWAY
+                    </option>
+                    <option value="MALL">
+                      MALL
+                    </option>
+                    <option value="MEW">
+                      MEW
+                    </option>
+                    <option value="MEWS">
+                      MEWS
+                    </option>
+                    <option value="NOOK">
+                      NOOK
+                    </option>
+                    <option value="NORTH">
+                      NORTH
+                    </option>
+                    <option value="OUTLOOK">
+                      OUTLOOK
+                    </option>
+                    <option value="PATH">
+                      PATH
+                    </option>
+                    <option value="PARADE">
+                      PARADE
+                    </option>
+                    <option value="POCKET">
+                      POCKET
+                    </option>
+                    <option value="PARKWAY">
+                      PARKWAY
+                    </option>
+                    <option value="PLACE">
+                      PLACE
+                    </option>
+                    <option value="PLAZA">
+                      PLAZA
+                    </option>
+                    <option value="PROMENADE">
+                      PROMENADE
+                    </option>
+                    <option value="PASS">
+                      PASS
+                    </option>
+                    <option value="PASSAGE">
+                      PASSAGE
+                    </option>
+                    <option value="POINT">
+                      POINT
+                    </option>
+                    <option value="PURSUIT">
+                      PURSUIT
+                    </option>
+                    <option value="PATHWAY">
+                      PATHWAY
+                    </option>
+                    <option value="QUADRANT">
+                      QUADRANT
+                    </option>
+                    <option value="QUAY">
+                      QUAY
+                    </option>
+                    <option value="REACH">
+                      REACH
+                    </option>
+                    <option value="ROAD">
+                      ROAD
+                    </option>
+                    <option value="RIDGE">
+                      RIDGE
+                    </option>
+                    <option value="RESERVE">
+                      RESERVE
+                    </option>
+                    <option value="REST">
+                      REST
+                    </option>
+                    <option value="RETREAT">
+                      RETREAT
+                    </option>
+                    <option value="RIDE">
+                      RIDE
+                    </option>
+                    <option value="RISE">
+                      RISE
+                    </option>
+                    <option value="ROUND">
+                      ROUND
+                    </option>
+                    <option value="ROW">
+                      ROW
+                    </option>
+                    <option value="RISING">
+                      RISING
+                    </option>
+                    <option value="RETURN">
+                      RETURN
+                    </option>
+                    <option value="RUN">
+                      RUN
+                    </option>
+                    <option value="SLOPE">
+                      SLOPE
+                    </option>
+                    <option value="SQUARE">
+                      SQUARE
+                    </option>
+                    <option value="STREET">
+                      STREET
+                    </option>
+                    <option value="SOUTH">
+                      SOUTH
+                    </option>
+                    <option value="STRIP">
+                      STRIP
+                    </option>
+                    <option value="STEPS">
+                      STEPS
+                    </option>
+                    <option value="SUBWAY">
+                      SUBWAY
+                    </option>
+                    <option value="TERRACE">
+                      TERRACE
+                    </option>
+                    <option value="THROUGHWAY">
+                      THROUGHWAY
+                    </option>
+                    <option value="TOR">
+                      TOR
+                    </option>
+                    <option value="TRACK">
+                      TRACK
+                    </option>
+                    <option value="TRAIL">
+                      TRAIL
+                    </option>
+                    <option value="TURN">
+                      TURN
+                    </option>
+                    <option value="TOLLWAY">
+                      TOLLWAY
+                    </option>
+                    <option value="UPPER">
+                      UPPER
+                    </option>
+                    <option value="VALLEY">
+                      VALLEY
+                    </option>
+                    <option value="VISTA">
+                      VISTA
+                    </option>
+                    <option value="VIEW/S">
+                      VIEW/S
+                    </option>
+                    <option value="WAY">
+                      WAY
+                    </option>
+                    <option value="WOOD">
+                      WOOD
+                    </option>
+                    <option value="WEST">
+                      WEST
+                    </option>
+                    <option value="WALK">
+                      WALK
+                    </option>
+                    <option value="WALKWAY">
+                      WALKWAY
+                    </option>
+                    <option value="WATERS">
+                      WATERS
+                    </option>
+                    <option value="WATERWAY">
+                      WATERWAY
+                    </option>
+                    <option value="WYND">
+                      WYND
+                    </option>
+                  </select>
+                  <p class="text-danger"
+                     v-if="showSQFormError && streetType==''">This field is required</p>
+                </div>
+                <div class="input-wrapper">
+                  <div class="placeholder">
+                    Suffix
+                  </div><select>
+                    <option>
+                      Select
+                    </option>
+                    <option>
+                      Other
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <div class="placeholder">
+                  Suburb
+                </div><input type="text"
+                     v-model="suburb">
+                <p class="text-danger"
+                   v-if="showSQFormError && suburb==''">This field is required</p>
+              </div>
+              <div class="col-2">
+                <div class="input-wrapper">
+                  <div class="placeholder">
+                    State
+                  </div><input placeholder="e.g. VIC"
+                       type="text"
+                       v-model="state">
+                  <p class="text-danger"
+                     v-if="showSQFormError && state==''">This field is required</p>
+                </div>
+                <div class="input-wrapper">
+                  <div class="placeholder">
+                    Post Code
+                  </div><input placeholder="e.g. 2188"
+                       type="text"
+                       v-model="postcode">
+                  <p class="text-danger"
+                     v-if="showSQFormError && postcode==''">This field is required</p>
+                </div>
+              </div>
+            </form>
+            
+            <div class="buttons-wrapper">
+                <div class="button --gradient-blue"
+                     id="button-order" v-on:click="SQFormChanged">
+                  <div class="text">
+                    Check Address
+                  </div>
+                </div>
+            </div>
+</div>
+
+            <div class="row"
+                 id="sq-result"
+                 v-if="step == 3">
+              <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                <h2 v-if="response_list.length &gt; 0">Service Qualification Results</h2>
+                <ul class="sq-result-list"
+                    v-if="response_list.length &gt; 0">
+                  <li v-for="msg in response_list">
+                    <p v-html="msg"></p>
+                  </li>
+                </ul>
+                <div v-html="qualificationMessage"></div>
+                <div class="map-wrapper --max-width-on-mobile">
+                  <div class="col-12 col-md-12 col-xs-12"
+                       v-if="step == 3">
+                    <div v-if="response_list.length &gt; 0">
+                      <p><em><!--Copy the address below and paste on the search box to get more details about the availability of NBN in your location in the map--></em></p>
+                      <p class="text-orange">{{ selectedAddressFormatted }}</p>
+                    </div>
+                  </div>
+                </div><!--
+                    <h4>We have determined that FTTP is available at your address. The install is already complete and you can be online within an hour. The nbn<sup>tm</sup> new development fee is not applicable. Due to your distance to the node, nbn<sup>tm</sup> has calculated your speed to be roughly 78 mbps.</h4>
+                    -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- choose your internet speed-->
+      <section class="sub-section modem-configuration"   id="bandwidth-profile">
+        <h2>Choose your bandwidth profile</h2>
+        <div class="choices-list choices-list-numbertype flex --normal-size mtfri grid --col-3" >
+<!--        <div class="choices-list choices-list-numbertype flex &#45;&#45;normal-size mtfri grid " style="grid-template-columns: repeat(5,1fr);">-->
+          <div class="choice__item  inaactd2"
+               v-if="isNCASAvailable || isNHASAvailable || isNFASAvailable"
+               v-on:click="bandwidthProfile = 'trafficClass4'" v-bind:class="{ '--is-active': bandwidthProfile == 'trafficClass4'}">
+            <h4>NBN Traffic Class 4</h4>
+            <h5>(Best Effort)</h5>
+          </div>
+          <div class="choice__item  inaactd2"
+              v-if="isNCASAvailable || isNFASAvailable"
+              v-on:click="bandwidthProfile = 'trafficClass2'" v-bind:class="{ '--is-active': bandwidthProfile == 'trafficClass2'}">
+            <h4>NBN Traffic Class 2</h4>
+            <h5>(High Priority)</h5>
+          </div>
+          <div class="choice__item  inaactd2"
+              v-if="isNHASAvailable || isNCASAvailable"
+              v-on:click="bandwidthProfile = 'lowCostEnterpriseEthernet'" v-bind:class="{ '--is-active': bandwidthProfile == 'lowCostEnterpriseEthernet'}">
+            <h4>NBN Enterprise Ethernet</h4>
+            <h5>Low Cos (Best-Effort)</h5>
+          </div>
+          <div class="choice__item  inaactd2"
+              v-if="isNHASAvailable || isNCASAvailable"
+              v-on:click="bandwidthProfile = 'highCostEnterpriseEthernet'" v-bind:class="{ '--is-active': bandwidthProfile == 'highCostEnterpriseEthernet'}">
+            <h4>NBN Enterprise Ethernet</h4>
+            <h5>High Cos (100% Guaranteed)</h5>
+          </div>
+          <div class="choice__item  inaactd2"
+               v-if="isNonNBNAvailable"
+               v-on:click="bandwidthProfile = 'fastFibre'" v-bind:class="{ '--is-active': bandwidthProfile == 'fastFibre'}">
+            <h4>Fast Fibre</h4>
+            <h5>(Not NBN&trade;)</h5>
+          </div>
+        </div>
+      </section>
+      <section class="sub-section modem-configuration"   id="contract-length">
+        <h2>Choose your contract length</h2>
+        <div  class="choices-list choices-list-numbertype flex --normal-size mtfri grid --col-3">
+          <div v-if="bandwidthProfile != 'fastFibre'"  class="choice__item  inaactd2"
+            v-on:click="contractLength = 12" v-bind:class="{ '--is-active': contractLength == 12}">
+            <h3>12 Month Contract</h3>
+            <!-- <h5>$1999</h5> -->
+          </div>
+          
+          <div  class="choice__item  inaactd2"
+            v-on:click="contractLength = 24" v-bind:class="{ '--is-active': contractLength == 24}">
+            <h3>24 Month Contract</h3>
+            <!-- <h5>$1999</h5> -->
+          </div>
+          <div  class="choice__item  inaactd2"
+            v-on:click="contractLength = 36" v-bind:class="{ '--is-active': contractLength == 36}">
+            <h3>36 Month Contract</h3>
+            <!-- <h5>$1999</h5> -->
+          </div>
+          <div v-if="bandwidthProfile == 'fastFibre'"  class="choice__item  inaactd2"
+            v-on:click="contractLength = 48" v-bind:class="{ '--is-active': contractLength == 48}">
+            <h3>48 Month Contract</h3>
+            <!-- <h5>$1999</h5> -->
+          </div>
+          
+        </div>
+      </section>
+      <!-- v-if="bandwidthProfile != ''"  -->
+      <section class="sub-section modem-configuration" v-if="bandwidthProfile != ''"   id="required-bandwidth">
+        <h2>Choose your required bandwidth</h2>
+        <div :class="bandwidthProfile != 'fastFibre' ? 'grid grid-cols-1' : 'flex justify-center'">
+          <div class="ph">
+            <vue-slider
+              v-if="bandwidthProfile != 'fastFibre'"
+              class="web-only"
+              v-model="requiredBandwidth"
+              :data="availableBandwidth"
+              :data-value="'value'"
+              :data-label="'name'"
+              tooltip="active"
+              @drag-end="handleDragOrChange"
+              adsorb="true"
+              :included="true"
+            >
+            
+            <div slot="label" slot-scope="{ label, active }" style="font-size: 12px !important" :class="['vue-slider-mark-label', 'text-sm', { active }]">{{ label }}</div>
+            
+            <div style="background: linear-gradient(to left,#66e7ff,#7467fe)" slot="tooltip" slot-scope="{ value }" class="w-60 min-w-0 p-4 rounded-lg shadow-xs dark:bg-gray-800">
+              <h4 class="mb-4 text-white text-3xl">
+                {{ value }}Mbps
+              </h4>
+              <small v-if="bandwidthProfile == 'trafficClass4'">nbn&trade; Traffic Class-4</small>
+              <small v-if="bandwidthProfile == 'trafficClass2'">nbn&trade; Traffic Class-2</small>
+              <small v-if="bandwidthProfile == 'lowCostEnterpriseEthernet'">nbn&trade;EE Low CoS</small>
+              <small v-if="bandwidthProfile == 'highCostEnterpriseEthernet'">nbn&trade;EE High CoS</small>
+              <small v-if="bandwidthProfile == 'fastFibre'">Fast Fibre</small>
+            </div>
+            <div slot="step" slot-scope="{ label, active }" :class="['custom-step', { active }]"></div>
+          </vue-slider>
+          <div @click="handleDragOrChange" v-if="bandwidthProfile == 'fastFibre'" style="background: linear-gradient(to left,#66e7ff,#7467fe)" class="cursor-pointer w-60 min-w-0 p-4 rounded-lg shadow-xs dark:bg-gray-800">
+            <h4 class="mb-4 text-white text-3xl">
+              1000Mbps
+            </h4>
+            <small >Fast Fibre</small>
+          </div>
+            <multiselect
+              class="mobile-only"
+              v-model="selectedBandwidth"
+              placeholder="Select a bandwidth"
+              label="name"
+              :allow-empty="false"
+              deselect-label=""
+              track-by="value"
+              :options="availableBandwidth"
+            ></multiselect>
+          </div>
+        </div>
+      </section>
+      <section class="sub-section modem-configuration"   id="support-package">
+        <h2>Choose a support package</h2>
+        <div class="choices-list choices-list-numbertype flex --normal-size mtfri grid --col-3">
+          <div class="choice__item  inaactd2"
+               v-on:click="supportPackage = 'Basic'" v-bind:class="{ '--is-active': supportPackage == 'Basic'}">
+            <h3>Basic</h3>
+            <h5>8am - Midnight Business Support</h5>
+          </div>
+          <div class="choice__item  inaactd2" v-if="!isNHASAvailable"
+               v-on:click="supportPackage = 'Bronze'" v-bind:class="{ '--is-active': supportPackage == 'Bronze'}">
+            <h3>Bronze</h3>
+            <h3>$45</h3>
+            <h5>nbn 12hr eSLA 24/7</h5>
+            <h5>24/7 Enterprise Support</h5>
+          </div>
+          <div class="choice__item  inaactd2" v-if="!isNHASAvailable"
+               v-on:click="supportPackage = 'Silver'" v-bind:class="{ '--is-active': supportPackage == 'Silver'}">
+            <h3>Silver</h3>
+            <h3>$60</h3>
+            <h5>nbn 8hr eSLA 24/7</h5>
+            <h5>24/7 Enterprise Support</h5>
+          </div>
+          <div class="choice__item  inaactd2"
+               v-on:click="supportPackage = 'Gold'" v-bind:class="{ '--is-active': supportPackage == 'Gold'}">
+            <h3>Gold</h3>
+            <h3>$70</h3>
+            <h5>nbn 6hr eSLA 24/7</h5>
+            <h5>24/7 Enterprise Support</h5>
+          </div>
+          <div class="choice__item  inaactd2"
+               v-on:click="supportPackage = 'Platinum'" v-bind:class="{ '--is-active': supportPackage == 'Platinum'}">
+            <h3>Platinum</h3>
+            <h3>$80</h3>
+            <h5>nbn 4hr eSLA 24/7</h5>
+            <h5>24/7 Enterprise Support</h5>
+          </div>
+        </div>
+        <br/>
+      </section>
+      <section class="sub-section modem-configuration"  id="fail-over">
+        <h2>Choose a fail over</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-1 px-12">
+        <div class="choices-list choices-list-numbertype --normal-size mtfri grid">
+          <div class="choice__item  inaactd2 flex justify-center items-center"
+               v-on:click="failOver = 'noFailOver'" v-bind:class="{ '--is-active': failOver == 'noFailOver'}">
+            <h3>No Failover</h3>
+          </div>
+        </div>
+        <div class="choices-list choices-list-numbertype --normal-size mtfri grid ">
+          <div class="choice__item  inaactd2"
+               v-on:click="failOver = 'failover4g'" v-bind:class="{ '--is-active': failOver == 'failover4g'}">
+            <h3>4G / 5G Failover</h3>
+            <h4>1 year $200 for 100GB data</h4>
+            <h5>May need to recharged incase of high usage while nbn is down</h5>
+          </div>
+        </div>
+        </div>
+        
+        <br/>
+      </section>
+      <section class="sub-section hardware" id="hardware">
+        <h2>Hardware</h2>
+        <p>How many computers or devices do you need to connect with a network cable?</p>
+        <small>(Determines whether you just need a wifi router, a router and a switch, or a wifi mesh.)</small>
+        <div class="choices-list mt-6 choices-list-people grid grid-cols-1 md:grid-cols-5">
+          <div class="choice__item --ghost "
+               @click="selectedHardwareQTY = '0-1'" v-bind:class="{ '--is-active': selectedHardwareQTY == '0-1'}">
+              <span>
+                  <h3>0-1</h3>
+                  <small>(You can use a wifi mesh)</small>
+              </span>
+          </div>
+          <div class="choice__item --ghost"
+          @click="selectedHardwareQTY = '1-5'" v-bind:class="{ '--is-active': selectedHardwareQTY == '1-5'}">
+              <span>
+                  <h3>1-5</h3>
+              </span>
+          </div>
+          <div class="choice__item --ghost"
+           @click="selectedHardwareQTY = '6-8'"
+            v-bind:class="{ '--is-active': selectedHardwareQTY == '6-8'}">
+              <span>
+                  <h3>6-8</h3>
+              </span>
+          </div>
+          <div class="choice__item --ghost"
+            @click="selectedHardwareQTY = '9-12'" v-bind:class="{ '--is-active': selectedHardwareQTY == '9-12'}">
+              <span>
+                  <h3>9-12</h3>
+              </span>
+          </div>
+          <div class="choice__item --ghost" @click="selectedHardwareQTY = ''">
+            <span>
+                <input @focus="isInitiallyLoaded = true"  v-model="customSelectedHardwareQTY" class="text-black"/>
+            </span>
+          </div>
+      </div>
+      </section>
+      <section class="sub-section wifi-coverage" id="wifi-coverage">
+        <h2>How much wifi coverage do you need?</h2>
+        <p>Determines how many wifi access points are needed we typically suggest one access point per 250sqm.</p>
+        <div class="choices-list mt-6 choices-list-people grid grid-cols-1 md:grid-cols-4">
+          <div class="choice__item --ghost "
+               @click="selectWiFiCoverage('< 200sqm')" v-bind:class="{ '--is-active': selectedWifiCoverage == '< 200sqm'}">
+              <span>
+                  <h3>< 200sqm</h3>
+              </span>
+          </div>
+          <div class="choice__item --ghost "
+               @click="selectWiFiCoverage('201 - 500sqm')" v-bind:class="{ '--is-active': selectedWifiCoverage == '201 - 500sqm'}">
+              <span>
+                  <h3>201 - 500sqm</h3>
+              </span>
+          </div>
+          <div class="choice__item --ghost "
+               @click="selectWiFiCoverage('501 - 750sqm')" v-bind:class="{ '--is-active': selectedWifiCoverage == '501 - 750sqm'}">
+              <span>
+                  <h3>501 - 750sqm</h3>
+              </span>
+          </div>
+          <div class="choice__item --ghost" @click="customWifiCoverageHandler">
+            <span>
+                <input @focus="isInitiallyLoaded = true" type="number" v-model="customSelectedWifiCoverage" class="text-black"/>
+            </span>
+          </div>
+      </div>
+      </section>
+      <section class="sub-section" id="choose-modem">
+        <h2>Choose Main Wifi Modem / Router</h2>
+        <p>nbn modem/router compatibility filter</p><!-- filters-->
+        <div class="filters --max-width-on-mobile">
+          <div class="filter__item --is-active"
+               @click="() => selectedModemType = ''"
+               data-category="show-all">
+            Show All
+          </div>
+          <div
+              v-for="brand in brandNames"
+              class="filter__item"
+               @click="selectedModemType = brand"
+               :data-category="brand">
+            {{ brand }}
+          </div>
+        </div>
+        <div class="filters-data choices-list grid --col-4 --big-gap">
+          <!-- --is-active -->
+<!--          <div  class="choice__item &#45;&#45;no-pt &#45;&#45;is-shown modem-box"-->
+<!--               data-category="show-all"-->
+<!--               data-value="modem BYO"-->
+<!--               v-on:click="updateField('modem','BYO')">-->
+<!--            <div class="byo">-->
+<!--              BYO-->
+<!--            </div>-->
+<!--            <h4 class="desc">You can bring your own modem, we will send you the configuration details via email.</h4>-->
+<!--            <h3 class="price">$0</h3>-->
+<!--          </div>&lt;!&ndash; item&ndash;&gt;-->
+          <div v-for="(modem,index) in filteredModems" :key="index"
+              v-bind:class="{ '--is-active': selectedModem.name == modem.dataClick}"
+              class="choice__item --no-pt --is-shown modem-box"
+              :data-category="modem.modem_types"
+               @click="updateField('modem',modem.dataClick, modem.id)"
+               :data-value="'modem-box $'+ modem.price">
+            <div class="flex items-center justify-center pb-12 lg:pb-4">
+                <img style="margin-bottom: -8%; margin-top: 40px" :src="modem.image_url" width="170" height="120">
+            </div>
+            <div class="features">
+                <h4 class="version">{{modem.name}}</h4>
+              <ul>
+                <li>Brand: {{modem.brand}}</li>
+                <li>Wireless N: {{modem.wireless_n}}</li>
+                <li>Wireless AC: {{modem.wireless_ac == null ? '-' : modem.wireless_ac}}</li>
+                <li>LAN: {{modem.lan == null ? '-' : modem.lan}}</li>
+                <li>WAN: {{modem.wan == null ? '-' : modem.wan}}</li>
+                <li>EWAN: {{modem.ewan == null ? '-' : modem.ewan}}</li>
+                <!-- <li>VOIP: {{modem.voip == null ? '-' : modem.voip}}</li> -->
+                <li>USB: {{modem.usb == null ? '-' : modem.usb}}</li>
+                <!-- <li>VLAN: {{modem.vlan == null ? '-' : modem.vlan}}</li> -->
+                <!-- <li>Aerial: {{modem.aerial == null ? '-' : modem.aerial}}</li> -->
+              </ul>
+            </div>
+            <div class="prices-wrapper">
+              <h3 class="price"><span>${{modem.price}}</span>
+              <span v-if="index < 2"><br>
+               Self Configuration. Shipped Directly to you.</span>
+              <span v-else><br>
+               Configured by us. Simple plug and play.</span>
+              </h3>
+            </div>
+          </div><!-- item-->
+        </div>
+      </section>
+      <section class="sub-section" id="choose-access-point">
+        <h2>Choose an Access Point</h2>
+        <p style="margin-bottom: 0.3em;">Given the size of your premise you should add 1 extra wifi access point</p><!-- filters-->
+        <small>These access points can connect to the main wifi router wirelessly however we may need to arrange them to be hardwired at an extra cost</small><!-- filters-->
+        <div class="pt-4" v-if="selectedWifiCoverage || customSelectedWifiCoverage">
+          <h3 v-if="!customSelectedWifiCoverage">Area to accomodate: {{ selectedWifiCoverage }}</h3><!-- filters-->
+          <h3 v-else>Area to accomodate: {{ customSelectedWifiCoverage }}sqm</h3><!-- filters-->
+          <h3>Area Covered by Selected Device: {{ getWifiCoverage.totalRange }}sqm.</h3>
+          <h4 v-if="selectedAccessPoint.length > 0 && getWifiCoverage.wcDiff > 0"> You are still short by {{ getWifiCoverage.wcDiff }}sqm. to cover the minimum area <span v-if="selectedAccessPoint.length > 0 && getWifiCoverage.wcDiff1 > 0">and {{ getWifiCoverage.wcDiff1 }}sqm. to cover the maximum area</span></h4>
+          <small v-if="(selectedAccessPoint.length > 0 && getWifiCoverage.wcDiff > 0) || (selectedAccessPoint.length > 0 && getWifiCoverage.wcDiff1 > 0)">(You should consider adding another access point / mesh point or a larger wifi router to cover your premise)</small>
+        </div>
+        <div v-if="filteredAccessPoints.length === 0" class="flex items-center justify-center mt-24">
+          <span class="text-4xl">No Access Point was found</span>
+        </div>
+        <div class="filters-data choices-list grid --col-4 --big-gap">
+<!--          v-bind:class="{ '&#45;&#45;is-active': selectedAccessPoint.name == modem.name}"-->
+          <div v-for="(modem,index) in filteredAccessPoints" :key="index"
+              class="choice__item --no-pt --is-shown modem-box"
+               @click="updateField('accessPoint',modem.name, modem.id)">
+            <div class="flex items-center justify-center pb-12 lg:pb-4">
+                <img style="margin-bottom: -8%; margin-top: 40px" :src="modem.image_url" width="170" height="120">
+            </div>
+            <div class="features">
+                <h4 class="version">{{modem.name}}</h4>
+                <h4 class="version">Brand: {{modem.brand}}</h4>
+                <h4 class="version">Range: {{modem.ap_range}} sqm.</h4>
+            </div>
+            <h3 class="price">
+              ${{modem.price}}
+            </h3>
+            <h4 v-if="selectedAccessPoint.length > 0" class="pt-2">
+              Quantity: {{selectedAccessPoint.filter((e) => e.id == modem.id).length}}
+            </h4>
+            <h4 style="position: relative">
+              <button type="button" @click="selectedAccessPoint.splice(selectedAccessPoint.indexOf(modem), 1)" class="example_c focus:outline-none" style="height:9px;">
+                            <span style="    position: relative;top: -0.8em;">
+                                -
+                            </span>
+              </button>
+              <button type="button" @click="addAP(modem)" class="example_c focus:outline-none" style="height:9px;">
+                            <span style="    position: relative;top: -0.8em;">
+                                +
+                            </span>
+              </button>
+            </h4>
+          </div><!-- item-->
+        </div>
+      </section>
+      <section class="sub-section" id="choose-firewall">
+        <h2>Choose a Firewall</h2>
+        <div class="filters-data choices-list grid --col-4 --big-gap">
+          <div v-for="(modem,index) in firewalls" :key="index"
+               v-bind:class="{ '--is-active': selectedFirewall.name == modem.name}"
+               class="choice__item --no-pt --is-shown modem-box"
+               :data-category="modem.name"
+               @click="updateField('firewall',modem.name, modem.id)"
+               :data-value="'modem-box $'+ modem.price">
+            <div class="flex items-center justify-center pb-12 lg:pb-6">
+              <img style="margin-bottom: -8%; margin-top: 40px" :src="modem.image_url" width="170" height="120">
+            </div>
+            <div class="features">
+              <h4 class="version">{{modem.name}}</h4>
+              <!--              <ul>-->
+              <!--                <li>Brand: {{modem.brand}}</li>-->
+              <!--                <li>Wireless N: {{modem.wireless_n}}</li>-->
+              <!--                <li>Wireless AC: {{modem.wireless_ac == null ? '-' : modem.wireless_ac}}</li>-->
+              <!--                <li>LAN: {{modem.lan == null ? '-' : modem.lan}}</li>-->
+              <!--                <li>WAN: {{modem.wan == null ? '-' : modem.wan}}</li>-->
+              <!--                <li>EWAN: {{modem.ewan == null ? '-' : modem.ewan}}</li>-->
+              <!--                &lt;!&ndash; <li>VOIP: {{modem.voip == null ? '-' : modem.voip}}</li> &ndash;&gt;-->
+              <!--                <li>USB: {{modem.usb == null ? '-' : modem.usb}}</li>-->
+              <!--                &lt;!&ndash; <li>VLAN: {{modem.vlan == null ? '-' : modem.vlan}}</li> &ndash;&gt;-->
+              <!--                &lt;!&ndash; <li>Aerial: {{modem.aerial == null ? '-' : modem.aerial}}</li> &ndash;&gt;-->
+              <!--              </ul>-->
+            </div>
+            <div class="prices-wrapper pb-4">
+              <h3 class="price"><span>${{modem.price}}</span>
+              </h3>
+            </div>
+          </div><!-- item-->
+        </div>
+      </section>
+      <!-- confirmation-->
+      <section class="sub-section" v-if="failOver != ''" id="confirmation" >
+        <h2>Confirmation</h2>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+            <div class="confirmation-list">
+              <div class="list__item">
+                <h4 class="question">Please confirm you have read all details about your choosen plan on the <a href="https://10mates.com.au/critical-information-summary/"
+                   target="_blank">Critical Information Summary</a> sheet</h4>
+                <div class="choices-list flex --normal-size">
+                  <div class="choice__item --ghost" v-bind:class="{ '--is-active': order.confirm.conf1}"
+                       v-on:click="updateField('conf1', true)">
+                    <span>Yes</span>
+                  </div>
+                  <div class="choice__item --ghost " v-bind:class="{ '--is-active': !order.confirm.conf1}"
+                        v-on:click="updateField('conf1', false)">
+                    <span>No</span>
+                  </div>
+                </div>
+              </div>
+              <div class="list__item">
+                <h4 class="question">Do you agree to the <a href="https://10mates.com.au/terms/"
+                   target="_blank">Terms and Conditions</a>?</h4>
+                <div class="choices-list flex --normal-size">
+                  <div class="choice__item --ghost"  v-bind:class="{ '--is-active': order.confirm.conf2}"
+                      v-on:click="updateField('conf2', true)">
+                    <span>Yes</span>
+                  </div>
+                  <div class="choice__item --ghost"  v-bind:class="{ '--is-active': !order.confirm.conf2}"
+                      v-on:click="updateField('conf2', false)">
+                    <span>No</span>
+                  </div>
+                </div>
+              </div>
+              <div class="list__item">
+                <h4 class="question">Do you agree to have your credit card automatically debited?</h4>
+                <div class="choices-list flex --normal-size">
+                  <div class="choice__item --ghost"  v-bind:class="{ '--is-active': order.confirm.conf3}"
+                      v-on:click="updateField('conf3', true)">
+                    <span>Yes</span>
+                  </div>
+                  <div class="choice__item --ghost "  v-bind:class="{ '--is-active': !order.confirm.conf3}"
+                      v-on:click="updateField('conf3', false)">
+                    <span>No</span>
+                  </div>
+                </div>
+              </div>
+              <div class="list__item">
+                <h4 class="question">I understand that this connection and contract can only be used at a single address and cannot be moved to another address.</h4>
+                <div class="choices-list flex --normal-size">
+                  <div class="choice__item --ghost"  v-bind:class="{ '--is-active': order.confirm.conf4}"
+                      v-on:click="updateField('conf4', true)">
+                    <span>Yes</span>
+                  </div>
+                  <div class="choice__item --ghost "  v-bind:class="{ '--is-active': !order.confirm.conf4}"
+                      v-on:click="updateField('conf4', false)">
+                    <span>No</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-danger"
+                 id="confirm-error"></div>
+          </div>
+        </div>
+      </section><!-- order summary-->
+<!--      <section class="sub-section" v-if="failOver != ''" id="order-summary" >-->
+      <section class="sub-section"  id="order-summary" >
+        <h2>Order Summary</h2>
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12" style="padding-bottom: 2em;">
+            <div class="order-summary">
+              <div class="order__item">
+                <h3 class="value">Monthly Cost</h3>
+              </div>
+              <div class="order__item">
+                <h3 class="value">Support</h3>
+              </div>
+              <div class="order__item" style="padding-left: 1em">
+                <h3 class="value">Other</h3>
+              </div>
+              <div class="order__item">
+               
+                <h3 class="value">
+                 {{contractLength}} months
+                </h3>
+<!--                <h3 class="value" >12 mos</h3>-->
+                <h6 class="placeholder">Contract Length</h6>
+              </div>
+              <div class="order__item">
+                <h3 class="value">{{supportPackage}} (${{parseFloat(supportPackagePrice).toFixed(2)}} per month)</h3>
+                <h6 class="placeholder">Support Package</h6>
+              </div>
+              <div class="order__item" style="padding-left: 1em">
+                <h3 class="value" v-if="failOver == 'failover4g'">4G / 5G Failover @ $200 per year</h3>
+                <h3 class="value" v-if="failOver == 'noFailOver'">No Fail Over</h3>
+                <h6 class="placeholder">Fail Over</h6>
+              </div>
+              <div class="order__item">
+                <h3 class="value" v-if="bandwidthProfile == 'trafficClass4'">Traffic Class 4</h3>
+                <h3 class="value" v-if="bandwidthProfile == 'trafficClass2'">Traffic Class 2</h3>
+                <h3 class="value" v-if="bandwidthProfile == 'lowCostEnterpriseEthernet'">NBN Low Cost Enterprise Ethernet</h3>
+                <h3 class="value" v-if="bandwidthProfile == 'highCostEnterpriseEthernet'">NBN High Cost Enterprise Ethernet</h3>
+                <h3 class="value" v-if="bandwidthProfile == 'fastFibre'">Non NBN (Fast Fibre)</h3>
+                <h6 class="placeholder">Bandwidth Profile</h6>
+              </div>
+              <div class="order__item">
+                <span v-if="selectedModem.name">
+                  <h3 class="value">{{ selectedModem.name }} (${{ modems.find(e => e.id == selectedModem.id).price }})</h3>
+                  <h6 class="placeholder">Wifi Router / Modem</h6>
+                </span>
+              </div>
+              <div class="order__item" style="padding-left: 1em">
+                <h3 class="value" > {{availableBandwidth.find((e) => e.value == requiredBandwidth).name}} Mbps</h3>
+                <h6 class="placeholder">Required Bandwidth</h6>
+              </div>
+              <div class="order__item">
+                <h3 class="value">${{ parseFloat(totalPlanPrice).toFixed(2) }} per month</h3>
+                <h6 class="placeholder">Plan Price</h6>
+              </div>
+              <div class="order__item">
+                <span v-if="selectedAccessPoint.length > 0">
+                  <h3 v-for="ap in Object.keys(detailedAccessPointOrder)" class="value">
+                    {{ detailedAccessPointOrder[ap][0].name }} ({{ detailedAccessPointOrder[ap].length }}pcs / ${{ detailedAccessPointOrder[ap][0].price }})
+                  </h3>
+                  <h6 class="placeholder">Access Point</h6>
+                </span>
+              </div>
+              <div class="order__item">
+                <span v-if="selectedFirewall.name">
+                  <h3 class="value">{{ selectedFirewall.name }} (${{ firewalls.find(e => e.id == selectedFirewall.id).price }})</h3>
+                  <h6 class="placeholder">Firewall</h6>
+                </span>
+              </div>
+              <div class="order__item">
+                <h3 class="value">${{ parseFloat(totalMonthCost).toFixed(2) }}</h3>
+                <h6 class="placeholder">Total Monthly Cost</h6>
+              </div>
+              <div class="order__item">
+                <span v-if="selectedHardwareQTY">
+                  <h3 class="value">{{ selectedHardwareQTY ? selectedHardwareQTY : customSelectedHardwareQTY }}</h3>
+                  <h6 class="placeholder">Hardware Quantity</h6>
+                </span>
+
+              </div>
+              <div class="order__item">
+                <span v-if="selectedWifiCoverage">
+                  <h3 class="value">{{ selectedWifiCoverage ? selectedWifiCoverage : customSelectedWifiCoverage }}</h3>
+                  <h6 class="placeholder">WiFi Coverage</h6>
+                </span>
+
+              </div>
+              <div class="order__item">
+                <h3 class="value">${{ getMinimumCost12Month }}</h3>
+                <h6 class="placeholder">Total Payable in {{ contractLength }} month contract</h6>
+              </div>
+              <div class="order__item"></div>
+              <div class="order__item"></div>
+              <div class="order__item"></div>
+              <div class="order__item">
+                <h3 class="value text-center">${{ getTotalPayable }}</h3>
+                <h4 class="value text-center">Total Payable Now</h4>
+                <h6 class="placeholder text-center">(one month upfront + hardware + other)</h6>
+                <div v-if="order.confirm.conf1 && order.confirm.conf2 && order.confirm.conf3 && order.confirm.conf4"
+                     class="choices-list flex --normal-size text-center" v-on:click="scrollPay()"><div class="choice__item --ghost"><span>Click here to enter your personal and payment details</span></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="order" v-if="showPaymentForm">
+       <!-- address form-->
+       <div class="wrapper">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-black">
+                <div class="reffered">
+                    <h6>Referral Code</h6>
+                    <input type="text" name="refcode" style="max-width: 150px; width: 100%;" id="refcode">
+                </div>
+
+                <form class="col-2 order-form" method="post">
+                    <div class="input-wrapper">
+                        <div class="placeholder">Business Company / Trading Name</div>
+                        <input name="orderbname"
+                               type="text"
+                               v-model="businessName">
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="placeholder">ABN / ACN</div>
+                        <input name="orderabn"
+                               type="text"
+                               v-model="abn">
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="placeholder">Full Name</div>
+                        <input name="orderfname"
+                               type="text"
+                               v-model="fullName">
+                       <p class="text-danger text-left"
+                          v-if="errorsSubmit.name.length > 0">{{ errorsSubmit.name }}</p>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="placeholder">Email</div>
+                        <input name="ordercemail"
+                               type="text"
+                               v-model="email">
+                       <p class="text-danger text-left"
+                           v-if="errorsSubmit.email.length > 0">{{ errorsSubmit.email }}</p>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="placeholder">Phone</div>
+                        <input name="ordercphone" type="text" v-model="phoneNumber">
+                     <p class="text-danger text-left"
+                          v-if="errorsSubmit.phone.length > 0">{{ errorsSubmit.phone }}</p>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="placeholder">Address</div>
+                        <input autocomplete="off"
+                               name="xna176saddr"
+                               type="text"
+                               v-model="address">
+                       <p class="text-danger text-left"
+                          v-if="errorsSubmit.address.length > 0">{{ errorsSubmit.address }}</p>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="placeholder">Credit Card Number</div>
+                        <input name="orderccnum"
+                               type="text"
+                               v-model="ccNum">
+                       <p class="text-danger text-left"
+                           v-if="errorsSubmit.ccNum.length > 0">{{ errorsSubmit.ccNum }}</p>
+                    </div>
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <div class="placeholder">Expiry Date</div>
+                            <input id="expDate"
+                                   name="orderexpdate"
+                                   placeholder="(MM/YYYY)"
+                                   type="text"
+                                   v-model="expDate">
+                            <p class="text-danger text-left"
+                               v-if="errorsSubmit.expDate.length > 0">{{ errorsSubmit.expDate }}</p>
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="placeholder">CVC Number</div>
+                            <input name="ordercvc" type="password" v-model="cvc">
+                            <p class="text-danger text-left" v-if="errorsSubmit.cvc.length > 0">{{ errorsSubmit.cvc }}</p>
+                        </div>
+                    </div>
+                    <div class="captcha-wrapper">
+                        <div class="g-recaptcha"
+                             data-sitekey="6LffjHYUAAAAABZYaJa5b_tq-RJcNi8VfCTuC6HD"></div>
+<!--                            <p class="text-danger"-->
+<!--                               v-if="errors.captcha != ''">{{ errors.captcha }}</p>-->
+                    </div>
+                    <div class="submit-wrapper">
+                        <div class="button --gradient-blue"
+                             v-on:click="doSubmitOrder">
+                            <input class="text" id="submit-order" type="button" value="Order Now">
+                        </div>
+                    </div>
+                </form>
+                <div class="stripe-mention">
+                    <h6>Credit card processed and secured by</h6><a href="http://stripe.com" class="flex justify-center"><img alt="Stripe" src="../img/logo/stripe-white.svg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <br/>
+  </div><!-- ORDER -->
+  <section id="faq">
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 faq">
+          <h2>Frequently Asked Questions</h2>
+          <div class="search-input">
+            <input placeholder="Type a single keyword (eg. nbn)"
+                 type="search"
+                 value="">
+          </div><!--
+              <ul class="recent-questions">
+                <li><a href="">What are the different types of nbn?</a></li>
+                <li><a href="">What is the nbn New Development Fee?</a></li>
+                <li><a href="">What is  a service class?</a></li>
+                <li><a href="">What speed will I get on the nbn?</a></li>
+              </ul>-->
+          <ul class="recent-questions">
+            <li id="what-are-the-different-types-of-nbn">
+              <a href="#what-are-the-different-types-of-nbn">What are the different types of nbn?</a>
+              <div>
+                <p class="description">FTTP, FTTN, FTTB, FTTC, HFC, Fixed Wireless and Satelite. To see a more detailed explaination of each type of nbn, see our <a href="https://10mates.com.au/nbn-technology-types/"
+                   target="_self">nbn technology types</a> page. To check what type of nbn you have, use our <a href="https://10mates.com.au/nbn/"
+                   target="_self">nbn checker</a>.</p>
+              </div>
+            </li>
+            <li id="what-are-the-different-nbn-service-classes">
+              <a href="#what-are-the-different-nbn-service-classes">What are the different nbn service classes?</a>
+              <div>
+                <h4>For a more detailed explanation of the service classes with PHOTOS, please view our <a href="https://10mates.com.au/nbn-service-classes/"
+                   target="_self">nbn service classes</a> page.</h4>
+                <h4>Service Class 0</h4>
+                <p class="description">Service Class 0 is a location that is planned to be serviceable by fibre (FTTP).</p>
+                <h4>Service Class 1</h4>
+                <p class="description">Service Class 1 is a location that is serviceable by fibre, however no PCD or NTD is in place.</p>
+                <h4>Service Class 2</h4>
+                <p class="description">The location is serviceable by fibre, PCD installed, no NTD in place</p>
+                <h4>Service Class 3</h4>
+                <p class="description">The location is serviceable by fibre, PCD and NTD in place</p>
+                <h4>Service Class 4</h4>
+                <p class="description">The location is planned to be serviceable by fixed wireless</p>
+                <h4>Service Class 5</h4>
+                <p class="description">The location is serviceable by fixed wireless, no antenna and NTD in place</p>
+                <h4>Service Class 6</h4>
+                <p class="description">The location is serviceable by fixed wireless, antenna and NTD in place</p>
+                <h4>Service Class 7</h4>
+                <p class="description">The location is planned to be serviceable by satellite</p>
+                <h4>Service Class 8</h4>
+                <p class="description">The location is serviceable by satellite but no satellite dish / NTD yet in place</p>
+                <h4>Service Class 9</h4>
+                <p class="description">The location is serviced by satellite (dish and NTD in place)</p>
+                <h4>Service Class 10</h4>
+                <p class="description">The location is planned to be serviceable by copper</p>
+                <h4>Service Class 11</h4>
+                <p class="description">The location is serviceable by copper, copper lead-in required</p>
+                <h4>Service Class 12</h4>
+                <p class="description">The location is serviceable by copper, jumpering is required</p>
+                <h4>Service Class 13</h4>
+                <p class="description">The location is serviceable by copper, infrastructure in place</p>
+                <h4>Service Class 20</h4>
+                <p class="description">The location is serviceable by cable (HFC)</p>
+                <h4>Service Class 21</h4>
+                <p class="description">The location is within the HFC footprint, no drop, wall plate or NTD</p>
+                <h4>Service Class 22</h4>
+                <p class="description">The location is within the HFC footprint, drop in place, no wall plate or NTD</p>
+                <h4>Service Class 23</h4>
+                <p class="description">The location is within the HFC footprint, drop and wall plate in place, no NTD</p>
+                <h4>Service Class 24</h4>
+                <p class="description">The location is within the HFC footprint, drop, wall plate and NTD in place</p>
+                <h4>Service Class 30</h4>
+                <p class="description">The location is planned to be serviced by FTTC.</p>
+                <h4>Service Class 31</h4>
+                <p class="description">The location is within the FTTC footprint, and copper lead-in is required.</p>
+                <h4>ervice Class 32</h4>
+                <p class="description">The location is within the FTTC footprint, copper lead-in present but not cut-in to Distribution Point Unit (DPU), nbn™ connection device – also known as a Network Connection Device (NCD) is required.</p>
+                <h4>Service Class 33</h4>
+                <p class="description">The location is within the FTTC footprint, copper lead-in present and cut-in to Distribution Point Unit (DPU), nbn™ connection device – also known as a Network Connection Device (NCD) is required.</p>
+                <h4>Service Class 34</h4>
+                <p class="description">The location is within the FTTC footprint, previously transitioned to nbn.</p>
+              </div>
+            </li>
+            <li id="what-is-the-nbn-new-development-fee-charge">
+              <a href="#what-is-the-nbn-new-development-fee-charge">What is the nbn New Development Fee / Charge?</a>
+              <div>
+                <p class="description">If your address is tagged as a new development by nbn, you will need to pay $300 for the installation or activation. With 10mates you can choose to pay that upfront or pay it off each month. On a 12 month
+                contract you would pay an additional $25 per month, on a 24 month contract you would pay an additional $12.50 per month. Obviously if you were to cancel the contract you would still need to pay the remaining new development fee plus
+                any other charges that apply. You can use our <a href="https://10mates.com.au/nbn-new-development-charge/"
+                   target="_self">nbn new development charge checker</a>.</p>
+              </div>
+            </li>
+            <li id="what-is-a-ups-used-for-during-an-electrical-outage">
+              <a href="#what-is-a-ups-used-for-during-an-electrical-outage">What is a UPS used for during an Electrical Outage?</a>
+              <div>
+                <p class="description">During an electrical outage, a UPS is used to keep your wifi/network running for a few hours. Your laptops and mobiles have batteries so they are ok, if you also want to plug a desktop computer in, that will
+                decrease the time quite a lot. The UPS that 10mates supplies is an APC BR1200GI and the expansion battery is an APC BR24BPG.</p>
+              </div>
+            </li>
+            <li id="when-will-my-nbn-install-happen">
+              <a href="#when-will-my-nbn-install-happen">When will my nbn install happen?</a>
+              <div>
+                <p class="description">Usually in around a week. This depends on how busy the contractors are in your area. If your area was just activated and there are not enough contractors in the area then it will take a bit longer. Once you
+                place an order, we will pass on your information to nbn so they can schedule the install. Once scheduled we will let you know. Unfortunately nbn doesn't give us contractor details so we have no way of contacting them. Some
+                contractors SMS/call a few days prior to confirm the appointment, some call an hour before and some just turn up during the appointment window.</p>
+              </div>
+            </li>
+            <li id="how-long-does-an-nbn-installation-take">
+              <a href="#how-long-does-an-nbn-installation-take">How long does an nbn installation take?</a>
+              <div>
+                <p class="description">FTTP, HFC, Fixed Wireless installs on average take under an hour to complete. Someone 18 years or older definitely needs to be there to meet and consult with the contractor. For FTTN/FTTB the contractor does
+                his work on the street so they usually don't need to visit your premise (if you can't afford to miss a day off work, then don't worry about it). In rare cases FTTN/FTTB contractors need access inside, if you aren't home, then it will
+                get rescheduled.</p>
+              </div>
+            </li>
+            <li id="can-i-reschedule-an-nbn-installation">
+              <a href="#can-i-reschedule-an-nbn-installation">Can I reschedule an nbn installation?</a>
+              <div>
+                <p class="description">Yes you can reschedule an nbn install. After you place an order we will return the earliest available appointment time. At that stage you can request the install be done at a later date, either morning or
+                afternoon.</p>
+              </div>
+            </li>
+            <li id="which-wifi-modem-or-router-do-i-need">
+              <a href="#which-wifi-modem-or-router-do-i-need">Which wifi modem or router do I need?</a>
+              <div>
+                <p class="description">FTTP, HFC, FTTC & FW only require a wireless router, FTTN and FTTB require a wireless modem router. You can use our <a href="https://10mates.com.au/nbn/"
+                   target="_self">nbn checker</a>, it will tell you what type of nbn you have then automatically filter our list of modems and routers.</p>
+              </div>
+            </li>
+            <li id="what-is-mdf-jumpering-and-do-I-need-it">
+              <a href="#what-is-mdf-jumpering-and-do-I-need-it">What is MDF jumpering and do I need it?</a>
+              <div>
+                <p class="description">In a MDU (multi dwelling unit) such as apartment buildings or units, most of the time all the phone lines are connected to a basement and then from the basement connected to your unit/apartment. Thus the name
+                FTTB (Fibre To The Basement). nbn states that their network boundary point is in the basement and will not touch the cabling from the basement to your unit/apartment. If your unit/apartment has not had a previous nbn connection then
+                most certainly you will require a private data/telco technician to do what is called an "MDF jumper", this is connecting your apartment cable to the nbn side of a MDF (Main Distribution Frame) in the basement. The appoximate cost for
+                this is about $100.</p>
+              </div>
+            </li>
+            <li id="can-i-choose-where-the-nbn-box-installation-is-done">
+              <a href="#can-i-choose-where-the-nbn-box-installation-is-done">Can I choose where the nbn box installation is done?</a>
+              <div>
+                <p class="description">Yes, you can choose where the installation is done, within limits. Length isn't the only limit, contractors get paid more for running cable over 30/40 meters. The contractor is also thinking about time and
+                risk. The contractor will arrive and give you his advice. He will let you know what he needs to do to get it where you want it and how it will look, for example a cable running along the eave or sticky fibre running on a skirting
+                board and conduit down a wall. If the contractor deems the job too complex then you may need to get a sparky to run the cable. Make that decision quick though, ask him to leave you some cable and reshedule the job to a specific date,
+                he shouldn't have a problem doing that and he will want that job back as it will be much easier because he doesn't have to run the cable. If the contractor is unwilling to do the job then most likely the next will too. If you don't
+                take the matter into your own hands, you won't be getting connected anytime soon.</p>
+              </div>
+            </li>
+            <li id="how-do-i-setup-my-modem-router-wifi">
+              <a href="#how-do-i-setup-my-modem-router-wifi">How do I setup my modem / router / wifi?</a>
+              <div>
+                <p class="description">For a video and screenshot guide on how to setup your modem/router/wifi go to the <a href="https://10mates.com.au/modem-router-wifi-setup/"
+                   target="_self">Modem / Router / Wifi Setup Page</a></p>
+                <p class="description">First you would need to attach your modem/router to either the nbn connection box that nbn installed, or in the case of a FTTN nbn install, to the telephone wall outlet. Then connect to your modem/router either
+                with a network cable or via wifi, once connected, open your internet browser such as Google Chrome, Safari or Internet Explorer and type the address 192.168.1.1 for TPLink, 192.168.0.1 for DLink, 192.168.0.1 or 192.168.1.1 for
+                Netgear in the address bar and press enter, this will ask you for a username/password and take you to the modem/router setup, the default username/password for TPLink is admin/admin, Netgear is admin/password, DLink is admin/"blank".
+                Once you are in the settings page you should be able to find either a Internet Setup Wizard or Setup Genie, in there you will need to enter the setup details we have emailed you.</p>
+              </div>
+            </li>
+            <li id="10mates-internet-routing">
+              <a href="#10mates-internet-routing">10MATES Internet Routing</a>
+              <div>
+                <p class="description">Domestic and peering traffic routes to Sydney, Melbourne, Perth and Brisbane with international traffic passing through Sydney. NT & SA route through VIC.</p>
+              </div>
+            </li>
+            <li id="how-can-i-block-porn-or-other-websites">
+              <a href="#how-can-i-block-porn-or-other-websites">How can I block porn or other websites?</a>
+              <div>
+                <p class="description">You can block porn and other websites by using a free internet filter by OpenDNS. To block pornography, sexuality or tasteless websites you need to change some modem/router settings. To do that open your
+                Internet Browser such as Google Chrome, Safari or Internet Explorer and go to the address 192.168.0.1 or if that doesn't work, try 192.168.1.1, the default username/password for TPLink is admin/admin, Netgear is admin/password, DLink
+                is admin/"blank" once you are in, look for Internet Settings. Once you find the Internet settings, all you need to do is change the two DNS addresses to 208.67.222.123 and 208.67.220.123. If you want to customise the filter to block
+                other sites such as social media etc you will need to setup a free account at <a href="https://signup.opendns.com/homefree/"
+                   target="_self">OpenDNS</a>.</p>
+              </div>
+            </li>
+            <li id="what-nbn-speed-do-i-need">
+              <a href="#what-nbn-speed-do-i-need">What nbn speed do I need?</a>
+              <div>
+                <p class="description">Below are three recommended speeds we suggest. nbn has phased out the 12 mbit plan. For browsing the internet, you won't notice the difference on any of the speeds, unless there are many people doing multiple
+                different things at the same time.</p>
+                <p>nbn25: Small households with few connected devices used mostly for browsing emails, social media and HD video streaming such as Netflix or youtube. Netflix recommends that a single HD video stream has 5 Mbps available.</p>
+                <p>nbn50: Medium households that have multiple connected devices. It should cover you fro downloading and uploading medium-sized files, video calling and 4K video streaming on Netflix or Youtube. Netflix recommends that a single 4K
+                video stream has 25 Mbps available.</p>
+                <p>nbn100: Large households that have heavy internet users with many connected devices. Will cover downloading and uploading large files, cloud storage and 4K video streaming such as Netflix or youtube. Netflix recommends that a
+                single 4K video stream has 25 Mbps available.</p>
+              </div>
+            </li>
+            <li id="how-can-i-stop-my-neigboughs-from-using-my-internet">
+              <a href="#how-can-i-stop-my-neigboughs-from-using-my-internet">How can I stop my neighbours from using my Internet/Wifi?</a>
+              <div>
+                <p class="description">The first step would be to set a randomly generated password on your wifi connection with a length of at least 8 characters, see examples <a href="https://www.lastpass.com/password-generator"
+                   target="_blank">here</a>. Be sure to use WPA2 password security on your modem/router. If you suspect your password has been compromised, change it immediately. You may want setup an filter to block known sites that can hack your
+                   computer using <a href="https://signup.opendns.com/homefree/"
+                   target="_blank">OpenDNS</a>.</p>
+              </div>
+            </li>
+          </ul>
+          <div class="faq__notfound">
+            <p class="description">No matches were found&hellip; Try type&ldquo;nbn&rdquo;.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- FOOTER -->
+  <footer>
+    <div class="wrapper row">
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <h3 class="title">10MATES</h3>
+        <div class="pars">
+          <p class="--small">An Australian owned and operated small business operating for over 5 years. We specialise in premium quality Internet and phone connections. We also have a large portfolio of web and app design projects.</p>
+          <p class="--small">&copy; 2019 10MATES PTY LTD. All rights reserved. ABN:15162723104 PH:03 9917 5453 PO Box 24044 Melbourne VIC 3001</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-6">
+        <h4 class="title">Services</h4>
+        <div class="footer-link-list">
+          <ul>
+            
+            <li class="list__item">
+              <a href="https://10mates.com.au/nbn/">Residential Internet</a>
+            </li>
+            <li class="list__item">
+              <a href="https://10mates.com.au/business/">Business Internet</a>
+            </li>
+            <li class="list__item">
+              <a href="https://10mates.com.au/nbn/">Phone / VOIP</a>
+            </li>
+            <li class="list__item">
+              <a href="https://10mates.com.au/web-dev/">Web and Mobile App Development</a>
+            </li>
+            <li class="list__item">
+              <a href="https://10mates.com.au/network-and-device-setup/">Network & Device Setup</a>
+            </li>
+            <li class="list__item">
+              <a href="https://10mates.com.au/4g-5g-nbn-redundant-backup-internet/">4G/5G Redundant/Backup Internet</a>
+            </li>
+            <li class="list__item">
+              <a href="https://10mates.com.au/internet-security/">Internet Security</a>
+            </li>
+            <li class="list__item">
+              <a href="https://10mates.com.au/family-internet-filters/">Family Internet Filters</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-6">
+        <h4 class="title">Other</h4>
+        <div class="footer-link-list">
+          <ul>
+            <li class="list__item">
+              <a href="https://10mates.com.au/jobs/">Jobs</a>
+            </li>
+            <li class="list__item">
+              <a href="https://10mates.com.au/pensioners/">Pensioner Discount</a>
+            </li>
+            <li class="list__item">
+              <a href="https://10mates.com.au/update/">Update Credit Card</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-6">
+        <h4 class="title">Support</h4>
+        <div class="footer-link-list">
+          <ul>
+            <li class="list__item">
+              <a href="https://10mates.com.au/faqs/">FAQs</a>
+            </li>
+            <li class="list__item">
+              <a href="https://10mates.com.au/troubleshooting/">Troubleshooting</a>
+            </li>
+            <li class="list__item">
+              <a href="https://10mates.com.au/modem-router-wifi-setup/">Modem/Router/Wifi Setup</a>
+            </li>
+            <li class="list__item">
+              <a href="https://10mates.com.au/nbn-speed-test-results/">nbn Speed Test Results</a>
+            </li>
+            <li class="list__item">
+              <a href="https://10mates.com.au/nbn-coverage-map/">nbn Coverage Map</a>
+            </li>
+            <li class="list__item">
+              <a href="https://10mates.com.au/nbn-technology-types/">nbn Technology Types</a>
+            </li>
+            <li class="list__item">
+              <a href="https://10mates.com.au/nbn-service-classes/">nbn Service Classes</a>
+            </li>
+            <li class="list__item">
+              <a href="https://10mates.com.au/nbn-new-development-charge/">nbn New Development Charge</a>
+            </li>
+            <li class="list__item">
+              <a href="https://10mates.com.au/nbn-enchanced-service-levels-esla/">nbn™ Enchanced Service Levels (eSLA)</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-6">
+        <h4 class="title">Social</h4>
+        <div class="social-link-list">
+          <a class="fb"
+               href="https://www.facebook.com/10mates/"></a><a class="tw"
+               href="https://twitter.com/10mtes"></a>
+        </div>
+      </div>
+      <div class="col-md-12 col-xs-12">
+        <div class="footer-link-list">
+          <br>
+          <a href="https://10mates.com.au/terms/">Terms & Conditions |</a> <a href="https://10mates.com.au/critical-information-summary/">Critical Information Summaries |</a> <a href="https://10mates.com.au/terms/">Privacy |</a> <a href=
+          "https://10mates.com.au/financial-hardship-policy/">Financial Hardship Policy |</a> <a href="https://10mates.com.au/contact/">Complaints |</a> <a href=
+          "https://10mates.com.au/authorised-representative/appointment-of-authorised-representative-form.docx">Appointment of Authorised Representative</a>
+        </div>
+      </div>
+    </div>
+    <figure class="footer-illustration">
+      <img alt="Rocket"
+              src="../img/bg/footer-illustration.svg">
+    </figure>
+  </footer>
+  <!-- /FOOTER -->
+  
+  <!-- Modal -->
+  <div id="modal-block">
+    <div aria-hidden="true"
+         class="modal micromodal-slide"
+         id="modal-1">
+      <div class="modal__overlay"
+           data-micromodal-close=""
+           tabindex="-1">
+        <div aria-labelledby="modal-1-title"
+             aria-modal="true"
+             class="modal__container"
+             role="dialog">
+          <header class="modal__header">
+            <h1 class="modal__title"
+                id="modal-1-title"
+                style="margin: 0 auto;">SPEAK TO OUR TEAM</h1>
+          </header>
+          <p style="color: rgb(10, 19, 139);margin: 0 auto;text-align: center;">We will investigate your address to see exactly what type of connection is available then discuss your needs to find a plan that suites.</p>
+          <div class="modal__content"
+               id="modal-1-content">
+            <div class="measure">
+              <div class="row">
+                <div class="input-field2">
+                  <label>Name <span class="required">*</span></label>
+                  <input class="input-field" name="cname"
+                       placeholder="Name"
+                       tabindex="1"
+                       type="text"
+                       v-bind:class="{ error_field: errors.name }"
+                       v-model.trim="name">
+                </div>
+              </div><br>
+              <div class="row">
+                <div class="input-field2">
+                  <label>Email <span class="required">*</span></label>
+                  <input class="input-field"
+                       placeholder="Email Address"
+                       tabindex="2"
+                       type="email"
+                       v-model="email" name="email">
+                </div>
+              </div><br>
+              <div class="row">
+                <div class="input-field2">
+                  <label>Phone/Mobile <span class="required">*</span></label>
+                  <input class="input-field"
+                       placeholder="Phone / Mobile"
+                       tabindex="3"
+                       type="text"
+                       v-model="phone" name="mobile">
+                </div>
+              </div><br>
+              <div class="row">
+                <div class="input-field2">
+                  <label>Choose Callback Time <span class="required">*</span></label>
+                  <select class="input-field"
+                       name="best-time"
+                       tabindex="6"
+                       v-model="time">
+                    <option selected
+                            value="">
+                      Select
+                    </option>
+                    <option value="asap">
+                      Call ASAP
+                    </option>
+                    <option value="7am-8am">
+                      7am-8am
+                    </option>
+                    <option value="8am-9am">
+                      8am-9am
+                    </option>
+                    <option value="9am-10am">
+                      9am-10am
+                    </option>
+                    <option value="10am-11am">
+                      10am-11am
+                    </option>
+                    <option value="11am-12pm">
+                      11am-12pm
+                    </option>
+                    <option value="12pm-1pm">
+                      12pm-1pm
+                    </option>
+                    <option value="1pm-2pm">
+                      1pm-2pm
+                    </option>
+                    <option value="2pm-3pm">
+                      2pm-3pm
+                    </option>
+                    <option value="3pm-4pm">
+                      3pm-4pm
+                    </option>
+                    <option value="4pm-5pm">
+                      4pm-5pm
+                    </option>
+                    <option value="5pm-6pm">
+                      5pm-6pm
+                    </option>
+                    <option value="6pm-7pm">
+                      6pm-7pm
+                    </option>
+                    <option value="7pm-8pm">
+                      7pm-8pm
+                    </option>
+                    <option value="8pm-9pm">
+                      8pm-9pm
+                    </option>
+                    <option value="9pm-10pm">
+                      9pm-10pm
+                    </option>
+                  </select>
+                </div>
+              </div><br>
+              <div class="row">
+                <div class="input-field2">
+                  <div class="input-wrapper">
+                    <div class="placeholder"></div>
+                    <label>Address <span class="required">*</span></label>
+                    <input class="input-field"
+                         placeholder="Your Address"
+                         tabindex="7"
+                         type="text"
+                         v-model="address" name="address">
+                  </div>
+                </div>
+              </div><br>
+              <div class="row">
+                <div class="input-field2">
+                  <div class="input-field2">
+                    <textarea class="input-field"
+                         placeholder="Any Questions?"
+                         tabindex="12"
+                         v-model="question" name="questions"></textarea>
+                  </div>
+                </div>
+              </div><br>
+              <div class="buttons">
+                <button id="submit-btn" class="modal__btn modal__btn-primary CallbackSub"
+                     v-on:click="doSubmit">Submit</button> 
+                <button aria-label="Close this dialog window" class="modal__btn CallbackClose"
+                     data-micromodal-close="">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal-->
+
+  <!-- Scripts -->
+  <script src="https://cdn.rangetouch.com/2.0.1/rangetouch.js" ></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        type="text/javascript"></script> 
+  <script src="https://js.stripe.com/v2/" type="text/javascript"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script> 
+  <script src="https://unpkg.com/vue@2.5.2/dist/vue.min.js" type="text/javascript"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/vue-slider-component@latest/dist/vue-slider-component.umd.min.js"></script>
+  <script src="../js/plugins//icheck/icheck.min.js" type="text/javascript"></script> 
+  <script src="../js/plugins/jquery.mask.min.js" type="text/javascript"></script> 
+  <script src="../js/dhtmlxcalendar.js" type="text/javascript"></script> 
+  <script src="../js/business-script.js" type="text/javascript"></script> 
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi31r7t_d_XhhWZMY7fcdfPkdBByH-BFo&libraries=places&callback=initJS"
+        type="text/javascript"></script> 
+  <script src="../js/main.js" type="text/javascript"></script> 
+  <script src="../js/animation.js" type="text/javascript"></script> 
+  <script src="../js/business-order.js" type="text/javascript"></script> 
+  <script src="../js/business-order-2.js" type="text/javascript"></script>
+  <script src="../js/web-dev.1.js" type="text/javascript"></script> 
+
+  <script src="../js/plugins/@glidejs/glide/dist/glide.min.js"></script>
+ 
+  <script>
+    var glide = new Glide('.glide', {
+      type: 'carousel',
+      startAt: 0,
+      perView: 3,
+      autoplay: 3000,
+      breakpoints: {
+        600: { perView: 1 },
+        1200: { perView: 3 }
+      }
+    });
+    glide.mount();
+    $(document).ready(function(){
+      if(window.location.hash == '#view'){
+        $("#button-order").click();
+        window.location.hash = '/';
+      }
+    });
+
+    $(document).ready(function(){
+      if(window.location.hash == '#view'){
+        $("#button-order-menu").click();
+        window.location.hash = '/';
+      }
+    });
+  </script> 
+
+<script src="/js/animation2.js"></script>
+
+  <script type="text/javascript">
+        'use strict';
+        ;( function ( document, window, index )
+        {
+                var hasElementClass             = function( element, className ){ return element.classList ? element.classList.contains( className ) : new RegExp( '(^| )' + className + '( |$)', 'gi' ).test( element.className ); },
+                        addElementClass         = function( element, className ){ element.classList ? element.classList.add( className ) : element.className += ' ' + className; },
+                        removeElementClass      = function( element, className ){ element.classList ? element.classList.remove( className ) : element.className = element.className.replace( new RegExp( '(^|\\b)' + className.split( ' ' ).join( '|' ) + '(\\b|$)', 'gi' ), ' ' ); };
+
+
+                // search & highlight
+
+                ;( function ( document, window, index )
+                {
+                        var container = document.querySelector( '.faq' );
+                        if( !container ) return true;
+
+                        var input                       = container.querySelector( 'input' ),
+                                notfound                = container.querySelector( '.faq__notfound' ),
+                                items                   = document.querySelectorAll( '.faq > ul > li' ),
+                                item                    = {},
+                                itemsIndexed    = [];
+
+                        [].forEach.call( items, function( entry )
+                        {
+                                itemsIndexed.push( entry.textContent.replace( /\s{2,}/g, ' ' ).toLowerCase() );
+                        });
+
+                        input.addEventListener( 'keyup', function( e )
+                        {
+                                if( e.keyCode == 13 ) // enter
+                                {
+                                        input.blur();
+                                        return true;
+                                }
+
+                                [].forEach.call( items, function( entry )
+                                {
+                                        entry.innerHTML = entry.innerHTML.replace( /<span class="highlight">([^<]+)<\/span>/gi, '$1' );
+                                });
+
+                                var searchVal = input.value.trim().toLowerCase();
+                                if( searchVal.length )
+                                {
+                                        itemsIndexed.forEach( function( entry, i )
+                                        {
+                                                if( itemsIndexed[ i ].indexOf( searchVal ) != -1 )
+                                                {
+                                                        removeElementClass( items[ i ], 'is-hidden' );
+                                                        items[ i ].innerHTML = items[ i ].innerHTML.replace( new RegExp( searchVal+'(?!([^<]+)?>)', 'gi' ), '<span class="highlight">$&<\/span>' );
+                                                }
+                                                else
+                                                        addElementClass( items[ i ], 'is-hidden' );
+                                        });
+                                }
+                                else [].forEach.call( items, function( entry ){ removeElementClass( entry, 'is-hidden' ); });
+
+                                if( items.length == [].filter.call( items, function( entry ){ return hasElementClass( entry, 'is-hidden' ) } ).length )
+                                        addElementClass( notfound, 'is-visible' );
+                                else
+                                        removeElementClass( notfound, 'is-visible' );
+                                        
+                        });
+                }( document, window, 0 ));
+
+
+                // toggling items on title press
+
+                ;( function ( document, window, index )
+                {
+                        [].forEach.call( document.querySelectorAll( '.faq h2 a' ), function( entry )
+                        {
+                                addElementClass( entry, 'js--is-toggleable-item' );
+                        });
+
+                        document.addEventListener( 'click', function( e )
+                        {
+                                if( hasElementClass( e.target, 'js--is-toggleable-item' ) )
+                                {
+                                        e.preventDefault();
+                                        var current = e.target;
+                                        while( current.parentNode )
+                                        {
+                                                current = current.parentNode;
+                                                if( current.tagName.toLowerCase() == 'li' )
+                                                {
+                                                        hasElementClass( current, 'is-active' ) ? removeElementClass( current, 'is-active' ) : addElementClass( current, 'is-active' );
+                                                        break;
+                                                }
+                                        }
+                                }
+                        });
+                }( document, window, 0 ));
+
+
+                // auto-show item content when show results reduces to single
+
+                ;( function ( document, window, index )
+                {
+                        var container = document.querySelector( '.faq' );
+                        if( !container ) return true;
+
+                        var input       = container.querySelector( 'input' ),
+                                items   = document.querySelectorAll( '.faq > ul > li' ),
+                                item    = {};
+
+                        input.addEventListener( 'keyup', function( e )
+                        {
+                                item = [].filter.call( items, function( entry ){ return !hasElementClass( entry, 'is-hidden' ); } )
+
+                                if( item.length == 1 )
+                                {
+                                        addElementClass( item[ 0 ], 'js--autoshown' );
+                                        addElementClass( item[ 0 ], 'is-active' );
+                                }
+                                else
+                                        [].forEach.call( items, function( entry )
+                                        {
+                                                if( hasElementClass( entry, 'js--autoshown' ) )
+                                                {
+                                                        removeElementClass( entry, 'js--autoshown' );
+                                                        removeElementClass( entry, 'is-active' );
+                                                }
+                                        });
+                        });
+                }( document, window, 0 ));
+
+        }( document, window, 0 ));
+
+  </script> 
+  <script>
+
+  if(document.getElementById('viewPlansBtn')){
+    document.getElementById('viewPlansBtn').onclick = function(){
+      window.location.href = '/nbn/#view';
+    };
+  }
+  function addEvent(obj, evt, fn) {
+      if (obj.addEventListener) {
+          obj.addEventListener(evt, fn, false);
+      } else if (obj.attachEvent) {
+          obj.attachEvent("on" + evt, fn);
+      }
+  }
+
+  // Exit intent trigger
+  addEvent(document, 'mouseout', function(evt) {
+      if (evt.toElement === null && evt.relatedTarget === null 
+          && !localStorage.getItem('exitintent_show')) {
+          MicroModal.show('modal-1');
+          localStorage.setItem('exitintent_show', 'true'); // Set the flag in localStorage
+      }
+  });
+
+  function faceBook () {
+    window.open("https://www.facebook.com/10MATES/reviews/");
+  }
+  function Gmail() {
+    window.open("https://www.google.com/search?hl=en-AU&gl=au&q=10MATES,+22a/209-225+Abbott+St,+Cairns+North+QLD+4870&ludocid=15143750766159554416#lrd=0x6ad4141d8a970c0b:0xd229691637fd6770,1");
+  }
+  </script> 
+</body>
+</html>

@@ -1,0 +1,540 @@
+[v-cloak] { display: none; }
+
+.table{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    float: left;
+}
+
+.some
+{
+    background: #f6f6f6;
+    float: left;
+    width: 100%;
+}
+
+.table .row-data{
+    color: #333;
+}
+
+.table .row {
+    display: table-row;
+    background: #f6f6f6;
+    float: left;
+    width: 100%;
+}
+.table .row:nth-of-type(odd) {
+    background: #e9e9e9;
+}
+.table .row.header {
+    font-weight: 900;
+    color: #ffffff;
+    background: #ea6153;
+    float: left;
+    width: 100%;
+}
+.table .row.green {
+    background: #27ae60;
+}
+.table .row.blue {
+    background: #2980b9;
+}
+
+.table .cell {
+    padding: 20px 20px;
+    display: table-cell;
+}
+
+ul.sq-result-list li{
+    display: list-item;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+#nbn-map-frame{
+    width: 100%;
+    height: 570px; 
+    border: 0px;
+}
+
+p.text-orange{
+    color: orange;
+}
+
+.main-sections .enter-your-address .map-wrapper{
+    padding: 25px;
+}
+
+#address-form{
+    margin-top: 40px;
+}
+
+.jc-bs3-container{
+    width: 100%;
+}
+.jconfirm-title-c{ padding-bottom: 0px;}
+.jconfirm-content p.desc{
+    font-size: 14px;
+    color: #b5cad6;
+    line-height: 15px;
+    text-align: center;
+}
+span.required{
+    color: red;
+}
+p.text-danger{ color: #ffbbbb;
+    font-size: 14px; }
+p.text-left{ text-align: left; }
+
+.jconfirm-content .form-control{
+    padding: 8px 5px 7px 20px;
+    background: #fff;
+    border-radius: 5px;
+    color: #333;
+}
+.jconfirm-content .form-control.error{
+    border: 1px solid red;
+}
+.jconfirm-content .placeholder{
+    color: #888;
+    padding: 15px 0px 0px 0px;
+}
+.jconfirm-content p.text-danger{ 
+    color: #fb6c6c;
+    font-size: 14px;
+    text-align: right;
+    padding: 5px;
+}
+.jconfirm-content .input-wrapper{
+    position: relative;
+}
+.jconfirm-title{ font-weight: normal;}
+
+.jconfirm.jconfirm-supervan .jconfirm-box div.jconfirm-content{
+    overflow: hidden !important;
+}
+
+textarea{
+    padding: 14px 20px;
+    font-size: 16px;
+    border-radius: 7px;
+    width: 100%;
+    border: none;
+    font-family: 'Rubik';
+    box-sizing: border-box;
+}
+
+/** Spinner **/
+.spinner {
+    margin: 30px auto 0;
+    width: 70px;
+    text-align: center;
+    opacity: 0;
+    transition: .4s all;
+    -webkit-transition: .4s all;
+}
+
+.spinner-text{
+    padding: 10px;
+    box-sizing: border-box;
+    transition: .5s all;
+    opacity: 1;
+    text-align: center;
+}
+
+.spinner-text.success{ color: lime; }
+.spinner-text.error{ color: #ff9f9f; }
+
+.spinner > div {
+width: 18px;
+height: 18px;
+background-color: #3abcef;
+
+border-radius: 100%;
+display: inline-block;
+-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+-webkit-animation-delay: -0.32s;
+animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+-webkit-animation-delay: -0.16s;
+animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+0%, 80%, 100% { -webkit-transform: scale(0) }
+40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+} 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+}
+}
+
+/* Gmaps Custom CSS */
+.pac-container{color:#d9d9d9}
+.pac-item{font-size:20px;color:#000000;font-family:Arial,Helvetica,sans-serif}
+.pac-matched{font-size:20px;color:#000000;font-family:Arial,Helvetica,sans-serif}
+
+
+.padtop10{ padding-top: 10px; }
+.padtop20{ padding-top: 20px;}
+.padtop40{ padding-top: 40px;}
+
+.margintop-40{ margin-top: 40px;}
+
+.margintop10{ margin-top: 10px !important; }
+.marginbtm10{ margin-bottom: 10px !important; }
+.marginbtm40{ margin-bottom: 40px !important; }
+
+.bg-green .jconfirm-bg{
+    background-color: #00C651 !important;
+}
+
+.button.disabled{
+    background: #CCC;
+}
+
+/** Custom Styles **/
+.orderDetailsBlock{ display:none; }
+.orderDetailsBlock.show{ display: block;}
+
+.text-center{ text-align: center;}
+.mtop10perc{
+    margin-top: 10%;
+}
+
+#order-summary .order-summary{
+    grid-template-columns: 34% 34% 30%;
+}
+#modal-speak-team .container-fluid{
+    padding: 0;
+}
+#speak-team .input-wrapper input,
+#speak-team .input-wrapper select
+{
+   
+    background-color: #fff;
+}
+
+#speak-team .row .col-xs-12{
+    /*padding: 0px 5px 0px 5px;*/
+    box-sizing:border-box;
+}
+
+#speak-team .input-wrapper input:focus,
+#speak-team .input-wrapper select:focus
+{
+    border: 2px solid #35b1c5;
+    box-shadow: 5px 3px 10px #27bfd8
+}
+
+#speak-team .error_field{
+    border: 2px solid #ff5050;
+}
+
+#speak-team .placeholder{
+    color: #fff;
+}
+
+
+#family-filter{ margin-top: 80px; }
+#family-filter h4 p small,
+#family-filter h5 p small{
+    font-size: 12px;
+}
+
+#family-filter .choices-list{
+    margin-top: 20px;
+}
+#family-filter .choice__item .inline{
+    display: inline;
+}
+
+#family-filter .choice__item{
+    padding: 30px 0;
+}
+
+#load-balanced .show-options{
+    font-size: 20px;
+}
+
+#modal-speak-team .chk-container{ padding: 10px; box-sizing: border-box; }
+#modal-speak-team .jconfirm-box .jconfirm-buttons button{
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid #fff;
+    background: transparent;
+}
+
+#modal-speak-team #speak-team{
+    display: block !important;
+}
+
+.jc-bs3-container.container-fluid{ padding-left: 0; padding-right: 0;}
+
+.critical-info a{
+    color: #d4d6fc;
+}
+#sq-result a{
+    color: #d4d6fc;
+    font-weight: bold;
+}
+
+h4.question a{
+    color: #d4d6fc;
+    font-weight: bold;
+}
+
+
+.keep-number-form{
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.keep-number-form h4{
+    padding-bottom: 20px;
+}
+
+.keep-number-form .radio-field{
+    padding-bottom: 20px;
+}
+
+#phone-call-form .form-group,
+.phone-call-form .form-group{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#phone-call-form .form-group .form-control,
+.phone-call-form .form-group .form-control{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box-terms{
+    background: #2b3c7c;
+    padding: 20px;
+    box-sizing: content-box;
+    margin-bottom: 20px;
+}
+.box-terms p{
+    font-size: 13px;
+}
+.box-terms h4{
+    font-weight: bold;
+}
+.box-terms .accept-terms{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.keep-number-form .details-box{
+    display: none;
+}
+
+.details-box.visible{
+    display: block;
+}
+
+#phone-call-form{
+    display: none;
+}
+#phone-call-form.visible{
+    display: block;
+}
+
+div#ajax-message p{
+    font-size: 15px;
+    text-align: center;
+}
+div#ajax-message p.error{
+    color: red;
+}
+div#ajax-message p.success{
+    color: lime;
+}
+
+.hideBtnOrder{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+
+.text-danger{
+    color: red;
+}
+
+#confirm-error{
+    font-size: 18px;
+    padding-top: 40px;
+}
+
+.error-message{ padding: 5px; }
+a.link{ color: #ff4545; font-weight: bold; }
+
+.nosavepwd{
+    -webkit-text-security: disc;
+    -moz-text-security: disc;
+    -o-text-security: disc;
+    -ms-text-security: disc;
+    text-security: disc;
+}
+
+.jconfirm .jconfirm-box div.jconfirm-content-pane{
+    overflow: hidden;
+}
+
+.jconfirm.jconfirm-modern .jconfirm-box div.jconfirm-content{
+    min-height: 30px;
+}
+  
+
+/** Media Queries **/
+@media screen and (max-width: 580px) {
+    .table .row {
+        padding: 14px 0 7px;
+        display: block;
+    }
+    .table .row.header {
+        padding: 0;
+        height: 6px;
+    }
+    .table .row.header .cell {
+        display: none;
+    }
+    .table .row .cell {
+        margin-bottom: 10px;
+    }
+    .table .row .cell:before {
+        margin-bottom: 3px;
+        content: attr(data-title);
+        min-width: 98px;
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #969696;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .table .cell {
+        padding: 2px 16px;
+        display: block;
+    }
+}
+
+/** Small Devices **/
+@media (max-width: 360px){
+    #modal-speak-team div.jconfirm-box-container{
+        /*margin-left: -25px;*/
+    }
+}
+
+@media (max-width: 700px) { 
+    #calendar .mtfri{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #calendar .mtfri .choice__item{
+        margin: 10px;
+    }
+    #calendar .mtfri .choice__item:last-child {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+    .orsep{
+        padding-top: 15px;
+    }
+
+    #additional-ip .choices-list{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    #additional-ip .choices-list .choice__item{
+        margin: 3px;
+    }
+}
+
+/** JConfirm **/
+.jconfirm-type-red .jconfirm-title{
+    color: #666;
+}
+.jconfirm-type-red .jconfirm-content{
+    color: #333;
+}
+.check-tick{
+    margin-bottom: -10px;
+}
+
+.types-phone-services .choices-list{
+    overflow: hidden !important;
+}
+
+.choices-list-people.flex{
+    grid-template-columns: repeat(11,1fr);
+    grid-gap: 0px;
+}
+
+.choices-list-people .choice__item{
+    margin-bottom: 10px !important;
+}
+
+
+@media only screen and (max-width: 1200px){
+    .choices-list-people.flex{
+        grid-template-columns: repeat(8,1fr);
+    }
+}
+
+@media only screen and (max-width: 920px){
+    .choices-list-people.flex{
+        grid-template-columns: repeat(6,1fr);
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .types-phone-services .choices-list .choices-list{
+        padding-bottom: 50px;
+    }
+    .types-phone-services .choices-list .choices-list h5{
+        padding: 10px 0px 10px 0px;
+    }
+
+    .choices-list-people.flex{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .choices-list-people.flex{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .choices-list-people.flex{
+        grid-template-columns: repeat(3,1fr);
+    }
+}

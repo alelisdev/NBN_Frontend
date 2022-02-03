@@ -1,0 +1,55 @@
+#page-websites img{
+    width: 100%;
+}
+
+.padtop40{
+    padding-top: 40px;
+}
+
+.padtop100{
+    padding-top: 100px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#home:before{
+    transform: scale(50);
+}
+
+#portfolio .container{
+    margin: 0 auto;
+}
+
+#hire .form-control{
+    width: 100%;
+}
+
+.header__list a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+#anim-5{
+    margin-top: 45px;
+}
+
+#header .home__content > div{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#header .home__content .buttons-wrapper .button:not(:last-child){
+    margin-right: 25px;
+}
+
+
+.header__logo:hover{
+    color: transparent;
+}
+
+@media only screen and (max-width: 768px){
+    .wrapper{
+        padding-right: 0;
+    }
+}

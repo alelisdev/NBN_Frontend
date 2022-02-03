@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>Thank you for ordering!</title>
+    <script>window.page = { trans_value: 0, trans_currency: 'AUD' };</script>
+    <meta name="Description" content="We have received your order, please check your email.">
+    <meta name="keywords" content="nbn, nbn plans, unlimited nbn plans, voip, low contention nbn">
+    <meta property="og:title" content="Thanks for ordering" />
+    <meta property="og:description" content="We have received your order and will be in touch" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://10mates.com.au/nbn/" />
+    <meta property="og:image" content="https://10mates.com.au/nbn/opengraph.jpg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="10MATES">
+    <meta name="application-name" content="10MATES">
+    <meta name="theme-color" content="#221f68">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WQHR845');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104234894-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+    </script>
+
+    <script>
+      if(localStorage.getItem('ttrans')){
+          try{ 
+            var ttrans = JSON.parse(localStorage.getItem('ttrans'));
+            var total = 0;
+            console.log('ttrans->new', ttrans);
+
+            var items = [];
+
+            for(t of ttrans.items){
+                if(t.Type == 'modem'){
+                    items.push({
+                        'sku': String(t.SKU).replace(' ','-'),
+                        'name': t.Description,
+                        'price': t.UnitAmount,
+                        'quantity': t.Quantity
+                    });
+
+                    total += (Number(t.UnitAmount) * Number(t.Quantity));
+                }
+            }
+
+            window.page.trans_value = Number(ttrans.total_amount).toFixed(2);
+
+            window.dataLayer = window.dataLayer || [];
+            dataLayer.push({
+                'transactionId': ttrans.id, 
+                'transactionAffiliation': '10MATES', 
+                'transactionTotal': total, 
+                'transactionProducts': items 
+            });
+
+
+          }catch(ex){
+              console.error('error => ', ex);
+          }
+      }else {
+        console.error('transaction doesnt exist');
+        dataLayer.push({
+                'transactionId': 1, 
+                'transactionAffiliation': '10MATES', 
+                'transactionTotal': 100, 
+                'transactionProducts': [{
+                      'sku': 'DD44',
+                      'name': 'Test',
+                      'category': 'Apparel',
+                      'price': 11.99,
+                      'quantity': 1
+                  },{
+                      'sku': 'AA1243544',
+                      'name': 'Test',
+                      'category': 'Apparel',
+                      'price': 9.99,
+                      'quantity': 2
+                }]
+            });
+        console.log(dataLayer)
+      }
+          
+    </script> -->
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/style4.css"/>
+  </head>
+  <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQHR845"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    <header id="header" class="header">
+        <div class="wrapper header__content row">
+          <div class="col-md-3 col-sm-3 col-xs-6"><a class="header__logo text-gradient --gradient-blue" href="index.html">10MATES</a></div>
+          <div class="col-sm-6 col-sm-offset-3 col-xs-6 burger-menu-wrapper">
+            <div class="burger-menu">
+              <div class="bar --top"></div>
+              <div class="bar --center"></div>
+              <div class="bar --bottom"></div>
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-9 col-xs-12 --align-right">
+            <div class="header__list-wrapper">
+              <ul class="header__list --align-right">
+                <li class="close-header-list-mobile">
+                  <div class="bar --top"></div>
+                  <div class="bar --bottom"></div>
+                </li>
+                <li><a href="https://10mates.com.au/nbn/">Internet</a></li>
+                <li><a href="https://10mates.com.au/nbn/">Business</a></li>
+                <li><a href="https://10mates.com.au/nbn/">Phone</a></li>
+                <li><a href="https://10mates.com.au/web-dev/">Web / Dev</a></li>
+                <li><a href="https://10mates.com.au/contact/">Contact</a></li>
+                <li class="buttons-wrapper">
+                  <div class="button --gradient-blue">
+                    <div class="text">ORDER</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-anim" id="anim-6" style="margin-top: 100px;"></div>
+    </header> 
+
+  
+<!-- FOOTER -->
+<footer>
+  <div class="wrapper row">
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <h3 class="title">10MATES</h3>
+      <div class="pars">
+        <p class="--small">An Australian owned and operated small business operating for over 5 years. We specialise in premium quality Internet and phone connections. We also have a large portfolio of web and app design projects.</p>
+        <p class="--small">&copy; 2019 10MATES PTY LTD. All rights reserved.  ABN:15162723104 PH:03 9917 5453 PO Box 24044 Melbourne VIC 3001</p>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-3 col-xs-6">
+      <h4 class="title">Services</h4>
+      <div class="footer-link-list">
+            <li class="list__item"><a href="https://10mates.com.au/nbn/">Residential Internet</a></li>
+            <li class="list__item"><a href="https://10mates.com.au/business/">Business Internet</a></li>
+            <li class="list__item"><a href="https://10mates.com.au/nbn/">Phone / VOIP</a></li>
+            <li class="list__item"><a href="https://10mates.com.au/web-dev/">Web and Mobile App Development</a></li>
+            <li class="list__item"><a href="https://10mates.com.au/network-and-device-setup/">Network & Device Setup</a></li>
+            <li class="list__item"><a href="https://10mates.com.au/4g-5g-nbn-redundant-backup-internet/">4G/5G Redundant/Backup Internet</a></li>
+            <li class="list__item"><a href="https://10mates.com.au/internet-security/">Internet Security</a></li>
+            <li class="list__item"><a href="https://10mates.com.au/family-internet-filters/">Family Internet Filters</a></li>
+          </div>
+    </div>
+    <div class="col-md-2 col-sm-3 col-xs-6">
+      <h4 class="title">Other</h4>
+      <div class="footer-link-list">
+        <li class="list__item"><a href="https://10mates.com.au/jobs/">Jobs</a></li>
+        <li class="list__item"><a href="https://10mates.com.au/pensioners/">Pensioner Discount</a></li>
+        <li class="list__item"><a href="https://10mates.com.au/update/">Update Credit Card</a></li>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-3 col-xs-6">
+      <h4 class="title">Support</h4>
+          <div class="footer-link-list">
+            <li class="list__item"><a href="https://10mates.com.au/faqs/">FAQs</a></li>
+            <li class="list__item"><a href="https://10mates.com.au/troubleshooting/">Troubleshooting</a></li>
+            <li class="list__item"><a href="https://10mates.com.au/modem-router-wifi-setup/">Modem/Router/Wifi Setup</a></li>
+            <li class="list__item"><a href="https://10mates.com.au/nbn-speed-test-results/">nbn Speed Test Results</a></li>
+            <li class="list__item"><a href="https://10mates.com.au/nbn-coverage-map/">nbn Coverage Map</a></li>
+            <li class="list__item"><a href="https://10mates.com.au/nbn-technology-types/">nbn Technology Types</a></li>
+            <li class="list__item"><a href="https://10mates.com.au/nbn-service-classes/">nbn Service Classes</a></li>
+            <li class="list__item"><a href="https://10mates.com.au/nbn-new-development-charge/">nbn New Development Charge</a></li>
+            <li class="list__item"><a href="https://10mates.com.au/nbn-enchanced-service-levels-esla/">nbn™ Enchanced Service Levels (eSLA)</a></li>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-3 col-xs-6">
+      <h4 class="title">Social</h4>
+      <div class="social-link-list"><a class="fb" href="https://www.facebook.com/10mates/"></a><a class="tw" href="https://twitter.com/10mtes"></a>
+      </div>
+    </div>
+    <div class="col-md-12 col-xs-12">
+      <div class="footer-link-list">
+        <br>
+        <a href="https://10mates.com.au/terms/">Terms & Conditions  |</a>
+        <a href="https://10mates.com.au/critical-information-summary/">Critical Information Summaries  |</a>
+        <a href="https://10mates.com.au/terms/">Privacy  |</a>
+        <a href="https://10mates.com.au/financial-hardship-policy/">Financial Hardship Policy  |</a>
+        <a href="https://10mates.com.au/contact/">Complaints  |</a>
+        <a href="https://10mates.com.au/authorised-representative/appointment-of-authorised-representative-form.docx">Appointment of Authorised Representative  </a>
+    </div>
+    </div>
+  </div>
+  <figure class="footer-illustration"><img src="../img/bg/footer-illustration.svg" alt="Rocket"/></figure>
+</footer>
+<!-- /FOOTER -->
+
+    <!-- Chatra {literal} -->
+    <style>
+      #chatra
+      {
+              bottom: 45px !important;
+              transform: none !important;
+      }
+      #chatra.chatra--pos-middle:not(.chatra--expanded)
+      {
+          bottom: 30% !important;
+      }
+      @media screen and (max-width: 768px) {
+          #chatra {
+              bottom:0 !important;
+          }
+      }
+      
+      </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104234894-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+</script>
+
+<script>
+  if(localStorage.getItem('ttrans')){
+      try{ 
+        var ttrans = JSON.parse(localStorage.getItem('ttrans'));
+        var total = 0;
+        console.log('ttrans->new', ttrans);
+
+        var items = [];
+
+        for(t of ttrans.items){
+            console.log(t)
+            if(t.Type == 'modem'){
+                items.push({
+                    'sku': String(t.ItemCode).replace(' ','-'),
+                    'name': t.SKU,
+                    'price': t.UnitAmount,
+                    'category': 'Modems',
+                    'quantity': t.Quantity
+                });
+
+                total += (Number(t.UnitAmount) * Number(t.Quantity));
+            }
+        }
+
+        window.page.trans_value = Number(ttrans.total_amount).toFixed(2);
+
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            'transactionId': ttrans.id, 
+            'transactionAffiliation': '10MATES', 
+            'transactionTotal': total, 
+            'transactionProducts': items 
+        });
+
+
+      }catch(ex){
+          console.error('error => ', ex);
+      }
+  }else {
+    console.error('transaction doesnt exist');
+    // window.page.trans_value = 0;
+
+    // window.dataLayer = window.dataLayer || [];
+    // dataLayer.push({
+    //         'transactionId': 1, 
+    //         'transactionAffiliation': '10MATES', 
+    //         'transactionTotal': 100, 
+    //         'transactionProducts': [{
+    //               'sku': 'test123',
+    //               'name': 'Test 123',
+    //               'category': 'Modems',
+    //               'price': 11.99,
+    //               'quantity': 1
+    //           },{
+    //               'sku': 'AA1243544',
+    //               'name': 'Test 123',
+    //               'category': 'Modems',
+    //               'price': 9.99,
+    //               'quantity': 2
+    //         }]
+    //     });
+    // console.log(dataLayer)
+  }
+      
+</script>
+    <script>
+        ChatraID = 'Zy5Wpuq2Hytkbq7id';
+        (function(d, w, c) {
+            var n = d.getElementsByTagName('script')[0],
+                s = d.createElement('script');
+            w[c] = w[c] || function() {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            s.async = true;
+            s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
+                + '//call.chatra.io/chatra.js';
+            n.parentNode.insertBefore(s, n);
+        })(document, window, 'Chatra');
+    </script>
+
+    
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/lottie.min.js"></script>
+    <script type="text/javascript" src="../js/animation4.js"></script>
+   
+    <!-- Event snippet for Example conversion page --> <script> gtag('event', 'conversion', {'send_to': '1024383139/xAW8CNajhZMBEKOxu-gD', 'value': page.trans_value, 'currency': 'AUD' }); </script>
+  </body>
+</html>

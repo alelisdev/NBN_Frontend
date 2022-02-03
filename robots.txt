@@ -1,0 +1,10 @@
+User-agent: *
+
+Disallow: /tuts/
+Disallow: /sendEmail.php
+Disallow: /tpgfttb/
+Disallow: /standard-nbn/
+Disallow: /win-free-stuff/
+Disallow: /bitcoin-crypto-payments/
+Disallow: /thank-you/
+Disallow: /template/

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1439px" height="784px" viewBox="0 0 1439 784" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="17.536319%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFC956" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="17.536319%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.0599999987">
+        <g id="10mates---Homepage" transform="translate(0.000000, -13304.000000)">
+            <g id="Group-5" transform="translate(-1.000000, 13304.000000)">
+                <g id="Group-4">
+                    <g transform="translate(-460.000000, -407.000000)">
+                        <polygon id="Path-5" fill="url(#linearGradient-1)" points="1117 0 1698.31543 1119.31929 2279.63086 0"></polygon>
+                        <polygon id="Path-5-Copy-2" fill="url(#linearGradient-1)" transform="translate(676.684572, 966.780230) rotate(-103.000000) translate(-676.684572, -966.780230) " points="95.3691445 407.120586 676.684572 1526.43987 1258 407.120586"></polygon>
+                        <polygon id="Path-5-Copy" fill="url(#linearGradient-2)" points="1312 187.181879 1698 930.05996 2084 187.181879"></polygon>
+                        <polygon id="Path-5-Copy-3" fill="url(#linearGradient-2)" transform="translate(676.983822, 965.023756) rotate(-103.000000) translate(-676.983822, -965.023756) " points="290.983822 593.584716 676.983822 1336.4628 1062.98382 593.584716"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
